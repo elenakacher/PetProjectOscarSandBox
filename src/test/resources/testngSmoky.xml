@@ -7,4 +7,12 @@
             </class>
         </classes>
     </test>
+
+    <test name="EditUserData" >
+        <classes>
+            <class name="com.telran.oscar.tests.ProfilePageTest">
+            </class>
+        </classes>
+    </test>
+
 </suite>

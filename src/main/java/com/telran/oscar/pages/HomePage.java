@@ -51,4 +51,10 @@ public class HomePage extends BasePage {
         click(logOutLink);
         return this;
     }
+
+
+    public ProfilePage clickOnAccountButton() {
+        click(accountLink);
+        return new ProfilePage(wd);
+    }
 }
