@@ -1,12 +1,11 @@
-package com.telran.oscar.pages;
+package com.telran.oscar.pages.user;
 
+import com.telran.oscar.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Collection;
-
-public class ProfilePage extends BasePage{
+public class ProfilePage extends BasePage {
     public ProfilePage(WebDriver wd) {
         super(wd);
     }
@@ -43,5 +42,21 @@ public class ProfilePage extends BasePage{
 
     public String getUserName() {
         return userName.getText();
+    }
+
+    @FindBy(id = "delete_profile")
+    WebElement deleteProfileBtn;
+
+    @FindBy(id = "id_password")
+    WebElement pwdField;
+
+    @FindBy(xpath = "//button[.='Delete']")
+    WebElement deleteBtn;
+
+    public ProfilePage deleteUser(String pwd) {
+        click(deleteProfileBtn);
+        type(pwdField, pwd);
+        click(deleteBtn);
+        return this;
     }
 }

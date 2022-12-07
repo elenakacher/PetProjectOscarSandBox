@@ -1,16 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="OscarLogin" verbose="1" >
-    <test name="Login" >
+
+    <test name="Registration" >
         <classes>
-            <class name="com.telran.oscar.tests.LoginPageTest">
+            <class name="com.telran.oscar.tests.user.RegistrationPageTest">
             </class>
         </classes>
     </test>
 
-    <test name="EditUserData" >
+    <test name="PlaceOrder" >
         <classes>
-            <class name="com.telran.oscar.tests.ProfilePageTest">
+            <class name="com.telran.oscar.tests.basket.PlaceOrderTest">
             </class>
         </classes>
     </test>

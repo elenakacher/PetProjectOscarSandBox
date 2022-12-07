@@ -1,5 +1,6 @@
 package com.telran.oscar.tests;
 
+import com.telran.oscar.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -31,9 +32,12 @@ public class TestBase {
         wd.get("http://selenium1py.pythonanywhere.com");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        new HomePage(wd).selectLanguage("British English");
+
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod(enabled = true)
     public void tierDown () {
         wd.quit();
     }

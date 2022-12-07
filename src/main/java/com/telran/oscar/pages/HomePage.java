@@ -1,12 +1,14 @@
 package com.telran.oscar.pages;
 
+import com.telran.oscar.pages.Basket.BasketPage;
+import com.telran.oscar.pages.product.AllProductsPage;
+import com.telran.oscar.pages.user.LoginAndRegistrationPage;
+import com.telran.oscar.pages.user.ProfilePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
-import java.util.List;
 
 public class HomePage extends BasePage {
     public HomePage(WebDriver wd) {
@@ -30,9 +32,9 @@ public class HomePage extends BasePage {
     @FindBy(id = "login_link")
     WebElement loginLink;
 
-    public LoginPage clickOnLoginButton() {
+    public LoginAndRegistrationPage clickOnLoginButton() {
         click(loginLink);
-        return new LoginPage(wd);
+        return new LoginAndRegistrationPage(wd);
     }
 
     @FindBy(id = "logout_link")
@@ -52,9 +54,25 @@ public class HomePage extends BasePage {
         return this;
     }
 
-
     public ProfilePage clickOnAccountButton() {
         click(accountLink);
         return new ProfilePage(wd);
     }
+
+    @FindBy(xpath = "//*[.='All products']")
+    WebElement allProductsLink;
+
+    public AllProductsPage clickOnAllProductsButton() {
+        click(allProductsLink);
+        return new AllProductsPage(wd);
+    }
+
+    @FindBy(xpath = "//div[@class = 'row']/div[2]//span/a")
+    WebElement viewBasket;
+
+    public BasketPage clickOnViewBasketButton() {
+        click(viewBasket);
+        return new BasketPage(wd);
+    }
+
 }
