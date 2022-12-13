@@ -1,4 +1,4 @@
-package com.telran.oscar.tests.basket;
+package com.telran.oscarOldVersion.tests.basket;
 
 import com.telran.oscar.data.AddressData;
 import com.telran.oscar.data.LoginPasswordData;
@@ -9,7 +9,7 @@ import com.telran.oscar.pages.Basket.OrderPreviewPage;
 import com.telran.oscar.pages.Basket.ShippingAddressPage;
 import com.telran.oscar.pages.product.AllProductsPage;
 import com.telran.oscar.pages.user.LoginAndRegistrationPage;
-import com.telran.oscar.tests.TestBase;
+import com.telran.oscarOldVersion.tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

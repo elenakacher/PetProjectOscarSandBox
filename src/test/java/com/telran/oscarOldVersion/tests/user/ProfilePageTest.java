@@ -1,11 +1,11 @@
-package com.telran.oscar.tests.user;
+package com.telran.oscarOldVersion.tests.user;
 
 import com.telran.oscar.data.LoginPasswordData;
 import com.telran.oscar.data.UserData;
 import com.telran.oscar.pages.HomePage;
 import com.telran.oscar.pages.user.LoginAndRegistrationPage;
 import com.telran.oscar.pages.user.ProfilePage;
-import com.telran.oscar.tests.TestBase;
+import com.telran.oscarOldVersion.tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

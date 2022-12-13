@@ -1,9 +1,9 @@
-package com.telran.oscar.tests.user;
+package com.telran.oscarOldVersion.tests.user;
 
 import com.telran.oscar.data.LoginPasswordData;
 import com.telran.oscar.pages.user.LoginAndRegistrationPage;
 import com.telran.oscar.pages.HomePage;
-import com.telran.oscar.tests.TestBase;
+import com.telran.oscarOldVersion.tests.TestBase;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,6 +19,7 @@ public class LoginPageTest extends TestBase {
     public void LoginPositiveTest() {
         new LoginAndRegistrationPage(wd).login(LoginPasswordData.USER_LOGIN,LoginPasswordData.USER_PASSWORD);
         new HomePage(wd).verifyUserName();
+        new LoginAndRegistrationPage(wd).takeScreenshotWithScrollDown();
     }
 
 

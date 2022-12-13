@@ -1,4 +1,4 @@
-package com.telran.oscar.tests;
+package com.telran.oscarOldVersion.tests;
 
 
 public class HomePageTest extends TestBase{

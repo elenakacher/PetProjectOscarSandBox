@@ -4,14 +4,14 @@
 
     <test name="Registration" >
         <classes>
-            <class name="com.telran.oscar.tests.user.RegistrationPageTest">
+            <class name="com.telran.oscarOldVersion.tests.user.RegistrationPageTest">
             </class>
         </classes>
     </test>
 
     <test name="PlaceOrder" >
         <classes>
-            <class name="com.telran.oscar.tests.basket.PlaceOrderTest">
+            <class name="com.telran.oscarOldVersion.tests.basket.PlaceOrderTest">
             </class>
         </classes>
     </test>
