@@ -3,6 +3,7 @@ package com.telran.oscar.pages;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
@@ -68,4 +69,38 @@ public class BasePage {
         return screen;
     }
 
+    @FindBy(id = "delete_profile")
+    WebElement deleteProfileBtn;
+
+    @FindBy(id = "id_password")
+    WebElement pwdField;
+
+    @FindBy(xpath = "//button[.='Delete']")
+    WebElement deleteBtn;
+
+    @FindBy(css = ".nav-link.mt-2.mt-lg-0")
+    WebElement accountLink;
+
+    public HomePage deleteUser(String pwd) {
+        click(accountLink);
+        click(deleteProfileBtn);
+        type(pwdField, pwd);
+        click(deleteBtn);
+        return new HomePage(wd);
+    }
+
+    @FindBy(xpath = "//button[.='Register']")
+    WebElement regBtn;
+
+    public boolean isRegBtnExists() {
+        return regBtn.isDisplayed();
+    }
+
+    @FindBy (xpath = "//a[.='Oscar']")
+    WebElement oscarBtn;
+
+    public HomePage clickOnOscarLink() {
+        click(oscarBtn);
+        return new HomePage(wd);
+    }
 }

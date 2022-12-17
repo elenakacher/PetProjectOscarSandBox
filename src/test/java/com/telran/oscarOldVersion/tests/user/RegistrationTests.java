@@ -9,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class RegistrationPageTest extends TestBase {
+public class RegistrationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
@@ -18,14 +18,14 @@ public class RegistrationPageTest extends TestBase {
 
     @Test
     public void userRegistrationTest() {
-        new LoginAndRegistrationPage(wd).userRegistration(LoginPasswordData.USER_LOGIN,LoginPasswordData.USER_PASSWORD);
-        new HomePage(wd).verifyUserName();
+        new LoginAndRegistrationPage(wd).userRegistration(LoginPasswordData.USER_LOGIN1,LoginPasswordData.USER_PASSWORD1);
+        new HomePage(wd).isAccountCreated();
     }
 
     @AfterMethod(enabled = true)
     public void tierDown () {
         new HomePage(wd).clickOnAccountButton();
-        new ProfilePage(wd).deleteUser(LoginPasswordData.USER_PASSWORD);
+        new ProfilePage(wd).deleteUser(LoginPasswordData.USER_PASSWORD1);
     }
 
 }

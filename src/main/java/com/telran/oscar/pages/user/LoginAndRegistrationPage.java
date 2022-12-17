@@ -29,13 +29,13 @@ public class LoginAndRegistrationPage extends BasePage {
     }
 
     @FindBy(id = "id_registration-email")
-    WebElement regEmail;
+    WebElement emailField;
 
     @FindBy(id = "id_registration-password1")
-    WebElement regPwd1;
+    WebElement PwdField1;
 
     @FindBy(id = "id_registration-password2")
-    WebElement regPwd2;
+    WebElement PwdField2;
 
     @FindBy(xpath = "//button[.='Register']")
     WebElement regBtn;
@@ -43,10 +43,52 @@ public class LoginAndRegistrationPage extends BasePage {
 
     public HomePage userRegistration(String name, String pwd) {
         int i = (int) (System.currentTimeMillis()) / 10000;
-        type(regEmail, i + name);
-        type(regPwd1, pwd);
-        type(regPwd2, pwd);
+        type(emailField, i + name);
+        type(PwdField1, pwd);
+        type(PwdField2, pwd);
         click(regBtn);
         return new HomePage(wd);
+    }
+
+    public HomePage userRegistrationWithDataProvider(String email, String password) {
+        type(emailField, email);
+        type(PwdField1, password);
+        type(PwdField2, password);
+        click(regBtn);
+        return new HomePage(wd);
+    }
+
+    @FindBy(css = ".error-block")
+    WebElement errorBlock;
+
+    public boolean isErrorExists() {
+        return errorBlock.isDisplayed();
+    }
+
+    public HomePage userRegistrationWithoutConcat(String name, String pwd) {
+        type(emailField, name);
+        type(PwdField1, pwd);
+        type(PwdField2, pwd);
+        click(regBtn);
+        return new HomePage(wd);
+    }
+
+    public LoginAndRegistrationPage userRegistrationWithDifferentPasswords(String name, String pwd1, String pwd2) {
+        type(emailField, name);
+        type(PwdField1, pwd1);
+        type(PwdField2, pwd2);
+        click(regBtn);
+        return this;
+    }
+
+    public LoginAndRegistrationPage loginWithDataProvider(String email, String pwd) {
+        type(loginUserName, email);
+        type(loginPassword, pwd);
+        click(logInBtn);
+        return this;
+    }
+
+    public boolean isLoginButtonPresent() {
+        return logInBtn.isDisplayed();
     }
 }

@@ -14,12 +14,12 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class PlaceOrderTest extends TestBase {
+public class PlaceOrderTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
         new HomePage(wd).clickOnLoginButton();
-        new LoginAndRegistrationPage(wd).login(LoginPasswordData.USER_LOGIN, LoginPasswordData.USER_PASSWORD);
+        new LoginAndRegistrationPage(wd).login(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
         new HomePage(wd).clickOnAllProductsButton();
         new AllProductsPage(wd).addToBasket();
         new HomePage(wd).clickOnViewBasketButton();
@@ -28,8 +28,8 @@ public class PlaceOrderTest extends TestBase {
     @Test
     public void placeOrderTest() {
         new BasketPage(wd).clickOnProceedToCheckoutButton();
-        new ShippingAddressPage(wd).fillNewAddressForm(AddressData.FIRST_NAME, AddressData.LAST_NAME,
-                AddressData.FIRST_LINE_OF_ADDRESS, AddressData.CITY, AddressData.POST_CODE);
+        new ShippingAddressPage(wd).fillNewAddressForm(AddressData.FIRST_NAME2, AddressData.LAST_NAME2,
+                AddressData.FIRST_LINE_OF_ADDRESS2, AddressData.CITY2, AddressData.POST_CODE2);
         new ShippingAddressPage(wd).selectCountry("Germany").clickOnFirstContinueButton()
                 .clickOnSecondContinueButton();
         new OrderPreviewPage(wd).clickOnPlaceOrderButton();

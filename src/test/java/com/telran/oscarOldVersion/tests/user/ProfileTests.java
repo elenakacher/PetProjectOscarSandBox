@@ -11,18 +11,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ProfilePageTest extends TestBase {
+public class ProfileTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
         new HomePage(wd).clickOnLoginButton();
-        new LoginAndRegistrationPage(wd).login(LoginPasswordData.USER_LOGIN, LoginPasswordData.USER_PASSWORD);
+        new LoginAndRegistrationPage(wd).login(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
         new HomePage(wd).clickOnAccountButton();
     }
 
     @Test
     public void editUserData() {
-        new ProfilePage(wd).inputUserName(UserData.USER_FIRSTNAME, UserData.USER_LASTNAME);
+        new ProfilePage(wd).clickOnEditProfileBtn().inputUserName(UserData.USER_FIRSTNAME, UserData.USER_LASTNAME).clickOnSaveBnt();
         Assert.assertTrue(new ProfilePage(wd).getConfirmMessage().contains("Profile updated"));
         Assert.assertTrue(new ProfilePage(wd).getUserName().contains("Tom Tailor"));
     }
@@ -30,7 +30,7 @@ public class ProfilePageTest extends TestBase {
 
     @AfterMethod(enabled = true)
     public void tierDown () {
-        new HomePage(wd).logOut();
+        new HomePage(wd).clickOnLogoutBtn();
     }
 
 }

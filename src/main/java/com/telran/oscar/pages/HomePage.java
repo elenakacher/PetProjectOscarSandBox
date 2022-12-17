@@ -37,19 +37,17 @@ public class HomePage extends BasePage {
         return new LoginAndRegistrationPage(wd);
     }
 
+    @FindBy(css = ".far.fa-user.mr-2")
+    WebElement accountLink;
+
+    public boolean isAccountCreated() {
+        return accountLink.isDisplayed();
+    }
+
     @FindBy(id = "logout_link")
     WebElement logOutLink;
 
-    @FindBy(xpath = "//*[.=' Account']")
-    WebElement accountLink;
-
-    public HomePage verifyUserName() {
-        Assert.assertTrue(accountLink.isDisplayed());
-        Assert.assertTrue(logOutLink.isDisplayed());
-        return this;
-    }
-
-    public HomePage logOut() {
+    public HomePage clickOnLogoutBtn() {
         click(logOutLink);
         return this;
     }

@@ -23,7 +23,7 @@ public class TestBaseLatestVersion {
 
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod(enabled = false)
     public void tierDown () {
         wd.quit();
     }
