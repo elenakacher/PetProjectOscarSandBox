@@ -65,7 +65,7 @@ public class HomePage extends BasePage {
         return new AllProductsPage(wd);
     }
 
-    @FindBy(xpath = "//div[@class = 'row']/div[2]//span/a")
+    @FindBy(xpath = "//div[@class = 'btn-group']/button[1]")
     WebElement viewBasket;
 
     public BasketPage clickOnViewBasketButton() {
