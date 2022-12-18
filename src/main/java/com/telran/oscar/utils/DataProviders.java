@@ -16,7 +16,7 @@ public class DataProviders {
     public Iterator<Object[]> regUserDataWithCsv() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("/userData.csv")
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/userData.csv")
         ));
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = reader.readLine();
@@ -33,7 +33,7 @@ public class DataProviders {
     public Iterator<Object[]> regInvalidUserEmailWithCsv() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("/regWithInvalidUserEmail.csv")
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/regWithInvalidUserEmail.csv")
         ));
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = reader.readLine();
@@ -50,7 +50,7 @@ public class DataProviders {
     public Iterator<Object[]> regInvalidUserPasswordWithCsv() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("/regWithInvalidUserPassword.csv")
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/regWithInvalidUserPassword.csv")
         ));
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = reader.readLine();
@@ -67,7 +67,7 @@ public class DataProviders {
     public Iterator<Object[]> EditProfileWithInvalidEmailWithCsv() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("/invalidUserEmail.csv")
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/invalidUserEmail.csv")
         ));
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = reader.readLine();
@@ -84,7 +84,7 @@ public class DataProviders {
     public Iterator<Object[]> addNewAddressWithMissingRequiredFieldsWithCsv() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("/addressWithMissinigRequeredFields.csv")
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/addressWithMissinigRequeredFields.csv")
         ));
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = reader.readLine();
@@ -101,7 +101,7 @@ public class DataProviders {
     public Iterator<Object[]> loginInvalidDataWithCsv() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("/loginInvalidData.csv")
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/loginInvalidData.csv")
         ));
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = reader.readLine();
