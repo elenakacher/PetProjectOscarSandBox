@@ -114,5 +114,38 @@ public class DataProviders {
         return userData.iterator();
     }
 
+    @DataProvider
+    public Iterator<Object[]> ReviewForLoggedUserWithMissingRequiredFieldsWithCsv() throws IOException {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/reviewWithMissingRequiredFieldsData.csv")
+        ));
+        List<Object[]> userData = new ArrayList<Object[]>();
+        String line = reader.readLine();
+
+        while(line != null) {
+            userData.add(line.split(","));
+            line = reader.readLine();
+        }
+        reader.close();
+        return userData.iterator();
+    }
+
+    @DataProvider
+    public Iterator<Object[]> ReviewForUnloggedUserWithMissingRequiredFieldsWithCsv() throws IOException {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(
+                DataProviders.class.getResourceAsStream("/dataProviderFiles/reviewWithMissingRequiredFieldsUnloggedUserData.csv")
+        ));
+        List<Object[]> userData = new ArrayList<Object[]>();
+        String line = reader.readLine();
+
+        while(line != null) {
+            userData.add(line.split(","));
+            line = reader.readLine();
+        }
+        reader.close();
+        return userData.iterator();
+    }
 
 }

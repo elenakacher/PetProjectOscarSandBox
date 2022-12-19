@@ -13,7 +13,7 @@ public class AllProductsPage extends BasePage {
     @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[2]//button")
     WebElement bookFirst;
 
-    @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[20]//button")
+    @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[19]//button")
     WebElement bookLast;
 
     public AllProductsPage addToBasket() {
@@ -45,7 +45,7 @@ public class AllProductsPage extends BasePage {
         return this;
     }
 
-    @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[2]//h3")
+    @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[3]//h3")
     WebElement firstBookTitel;
 
     public String getFirstBookTitel() {
@@ -123,26 +123,26 @@ public class AllProductsPage extends BasePage {
     }
 
     @FindBy(css = ".breadcrumb-item:nth-child(3)")
-    WebElement nonFictionLink;
+    WebElement nonFictionLinkOnBreadcrumbs;
 
     public AllProductsPage clickOnNonFictionLinkOnBreadcrumbs() {
-        click(nonFictionLink);
+        click(nonFictionLinkOnBreadcrumbs);
         return this;
     }
 
     @FindBy(css = ".breadcrumb-item:nth-child(3)")
-    WebElement fictionLink;
+    WebElement fictionLinkOnBreadcrumbs;
 
     public AllProductsPage clickOnFictionLinkOnBreadcrumbs() {
-        click(fictionLink);
+        click(fictionLinkOnBreadcrumbs);
         return this;
     }
 
     @FindBy(css = ".breadcrumb-item:nth-child(2)")
-    WebElement booksLink;
+    WebElement booksLinkOnBreadcrumbs;
 
     public AllProductsPage clickOnBooksLinkOnBreadcrumbs() {
-        click(booksLink);
+        click(booksLinkOnBreadcrumbs);
         return this;
     }
 
@@ -153,4 +153,39 @@ public class AllProductsPage extends BasePage {
         click(homeLink);
         return this;
     }
+
+    @FindBy(css = "li > a[href*=clothing_1]")
+    WebElement clothingLink;
+
+    public AllProductsPage clickOnClothingLink() {
+        click(clothingLink);
+        return this;
+    }
+
+    @FindBy(css = "li > a[href*=books_2]")
+    WebElement bookLink;
+
+    public AllProductsPage clickOnBooksLink() {
+        click(bookLink);
+        return this;
+    }
+
+    @FindBy(css = "li > a[href*=fiction_3]")
+    WebElement fictionLink;
+
+    public AllProductsPage clickOnFictionLink() {
+        click(fictionLink);
+        return this;
+    }
+
+    @FindBy(css = "li > a[href*=non-fiction_5]")
+    WebElement nonfictionLink;
+
+
+    public AllProductsPage clickOnNonFictionLink() {
+        click(nonfictionLink);
+        return this;
+    }
+
+
 }

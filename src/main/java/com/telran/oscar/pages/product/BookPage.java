@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
 
 public class BookPage extends BasePage {
     public BookPage(WebDriver wd) {
@@ -117,4 +116,103 @@ public class BookPage extends BasePage {
             if (imageDisplayed) return true;
             else return false;
         }
+
+    @FindBy(id = "write_review")
+    WebElement writeReviewBtn;
+
+    @FindBy(id = "id_title")
+    WebElement reviewTitelField;
+
+    @FindBy(xpath = "//div[@class ='star-rating ']//i[4]")
+    WebElement starRating;
+
+    @FindBy(id = "id_body")
+    WebElement bodyField;
+
+    @FindBy(id = "id_name")
+    WebElement nameField;
+
+    @FindBy(id = "id_email")
+    WebElement emailField;
+
+    @FindBy(xpath = "//button[@class = 'btn btn-primary btn-lg']")
+    WebElement saveBtn;
+
+    @FindBy(xpath = "//a[contains(text(),'cancel')]")
+    WebElement cancelBtn;
+
+    public BookPage writeReview(String title, String body) {
+        click(writeReviewBtn);
+        type(reviewTitelField, title);
+        click(starRating);
+        type(bodyField, body);
+        click(saveBtn);
+        return this;
+    }
+
+    @FindBy(xpath = "//a[contains(text(), 'customer review')]")
+    WebElement displayedReview;
+
+    public boolean isReviewDisplayed() {
+        return displayedReview.isDisplayed();
+    }
+
+    public boolean isSaveBtnDisplayed() {
+        return saveBtn.isDisplayed();
+    }
+
+    public BookPage writeReviewWithoutRating(String title, String body) {
+        click(writeReviewBtn);
+        type(reviewTitelField, title);
+        type(bodyField, body);
+        click(saveBtn);
+        return this;
+    }
+
+    public BookPage writeReviewUnloggedUser(String title, String body, String name, String email) {
+        click(writeReviewBtn);
+        type(reviewTitelField, title);
+        click(starRating);
+        type(bodyField, body);
+        type(nameField, name);
+        type(emailField, email);
+        click(saveBtn);
+        return this;
+    }
+
+    public BookPage writeReviewWithoutRatingUnloggedUser(String title, String body, String name, String email) {
+        click(writeReviewBtn);
+        type(reviewTitelField, title);
+        type(bodyField, body);
+        type(nameField, name);
+        type(emailField, email);
+        click(saveBtn);
+        return this;
+    }
+
+    @FindBy(xpath = "//button[@class = 'btn btn-lg btn-primary w-100']")
+    WebElement addToBasketBtn;
+
+    public BookPage addToBasketTest() {
+        click(addToBasketBtn);
+        return this;
+    }
+    @FindBy(css = ".fade.show:nth-child(1) > div.alertinner")
+    WebElement confirmMsg;
+
+    public String confirmMessageText() {
+        return confirmMsg.getText();
+    }
+
+    @FindBy(xpath = " //a[contains(text(),'Checkout now')]")
+    WebElement checkoutBtn;
+
+    public boolean isCheckoutNowBtnAppeared() {
+        return checkoutBtn.isDisplayed();
+    }
+
+    public BookPage addToWishListTest() {
+        return this;
+    }
 }
+

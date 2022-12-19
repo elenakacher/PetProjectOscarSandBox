@@ -7,6 +7,9 @@
             <class name="com.telran.oscarLatestVersion.tests.product.AllBooksPageTests">
             </class>
             <class name="com.telran.oscarLatestVersion.tests.product.BookPageTests">
+                <methods>
+                    <exclude name=".*Negative.*"></exclude>
+                </methods>
             </class>
             <class name="com.telran.oscarLatestVersion.tests.product.SidePanelTests">
             </class>

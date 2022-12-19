@@ -25,7 +25,7 @@ public class AllBooksPageTests extends TestBaseLatestVersion {
         new AllProductsPage(wd).addToBasket();
         new HomePage(wd).clickOnViewBasketButton();
         Assert.assertTrue(new BasketPage(wd).getBookFirstTitel().contains("Hacking Exposed Wireless"));
-        Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("The Cathedral"));
+        Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("Social Engineering"));
     }
 
     @Test
@@ -55,13 +55,13 @@ public class AllBooksPageTests extends TestBaseLatestVersion {
     @Test
     public void previousPageTest() {
         new AllProductsPage(wd).clickOnNextButton().clickOnPreviousButton();
-        Assert.assertTrue(new AllProductsPage(wd).getFirstBookTitel().contains("Hacking Exposed Wireless"));
+        Assert.assertTrue(new AllProductsPage(wd).getFirstBookTitel().contains("Coders at Work"));
     }
 
     @Test
     public void bookTitleLinkRedirectToBookPageTest() {
         new AllProductsPage(wd).clickOnFirstBookTitle();
-        Assert.assertTrue(new BookPage(wd).getBookTitel().contains("Hacking Exposed Wireless"));
+        Assert.assertTrue(new BookPage(wd).getBookTitel().contains("Coders at Work"));
         new BookPage(wd).clickOnHomeLink();
         new AllProductsPage(wd).clickOnLastBookTitle();
         Assert.assertTrue(new BookPage(wd).getBookTitel().contains("The Cathedral"));
