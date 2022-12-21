@@ -1,9 +1,12 @@
 package com.telran.oscar.pages.Basket;
 
 import com.telran.oscar.pages.BasePage;
+import com.telran.oscar.pages.product.AllProductsPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.Collection;
 
 public class BasketPage extends BasePage {
     public BasketPage(WebDriver wd) {

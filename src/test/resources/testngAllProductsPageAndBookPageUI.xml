@@ -2,17 +2,17 @@
 
 <suite name="OscarSandbox" verbose="1" >
 
-    <test name="Products" >
+    <test name="UITests" >
         <classes>
-            <class name="com.telran.oscarLatestVersion.tests.product.AllProductsPageTests">
+            <class name="com.telran.oscarLatestVersion.tests.product.AllProductsUITests">
             </class>
+
             <class name="com.telran.oscarLatestVersion.tests.product.BookPageTests">
                 <methods>
-                    <exclude name=".*Negative.*"></exclude>
+                    <include name=".*UI.*"/>
                 </methods>
             </class>
-            <class name="com.telran.oscarLatestVersion.tests.product.SidePanelTests">
-            </class>
         </classes>
+
     </test>
 </suite>

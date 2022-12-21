@@ -12,7 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AllBooksPageTests extends TestBaseLatestVersion {
+public class AllProductsPageTests extends TestBaseLatestVersion {
 
     @BeforeMethod
     public void ensurePrecondition() {
@@ -24,8 +24,20 @@ public class AllBooksPageTests extends TestBaseLatestVersion {
     public void addToBasketTest() {
         new AllProductsPage(wd).addToBasket();
         new HomePage(wd).clickOnViewBasketButton();
-        Assert.assertTrue(new BasketPage(wd).getBookFirstTitel().contains("Hacking Exposed Wireless"));
-        Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("Social Engineering"));
+        Assert.assertTrue(new BasketPage(wd).getBookFirstTitel().contains("The shellcoder's handbook"));
+        Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("The Cathedral &"));
+    }
+
+    @Test
+    public void addToBasketPriceOnHeaderCompareTest() {
+        new AllProductsPage(wd).addToBasket();
+        Assert.assertTrue(new AllProductsPage(wd).getBasketTotal1().contains("20.98"));
+    }
+
+    @Test
+    public void addToBasketPriceOnAllProductsPageCompareTest() {
+        new AllProductsPage(wd).addToBasket();
+        Assert.assertTrue(new AllProductsPage(wd).getBasketTotal2().contains("20.98"));
     }
 
     @Test
@@ -55,13 +67,13 @@ public class AllBooksPageTests extends TestBaseLatestVersion {
     @Test
     public void previousPageTest() {
         new AllProductsPage(wd).clickOnNextButton().clickOnPreviousButton();
-        Assert.assertTrue(new AllProductsPage(wd).getFirstBookTitel().contains("Coders at Work"));
+        Assert.assertTrue(new AllProductsPage(wd).getFirstBookTitel().contains("The shellcoder's handbook"));
     }
 
     @Test
     public void bookTitleLinkRedirectToBookPageTest() {
         new AllProductsPage(wd).clickOnFirstBookTitle();
-        Assert.assertTrue(new BookPage(wd).getBookTitel().contains("Coders at Work"));
+        Assert.assertTrue(new BookPage(wd).getBookTitel().contains("The shellcoder's handbook"));
         new BookPage(wd).clickOnHomeLink();
         new AllProductsPage(wd).clickOnLastBookTitle();
         Assert.assertTrue(new BookPage(wd).getBookTitel().contains("The Cathedral"));
