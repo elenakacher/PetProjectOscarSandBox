@@ -6,9 +6,11 @@ The graduation paper of the Tel-Ran School testers' group.
 </a>
 
 
-### **Objective of the project:**
+### **Objective of the project**
 
 Automating the testing of an online bookstore. Compilation of a set of autotests for smokey testing of the first version of the website. Identification of bugs and compilation of a set of autotests for regression testing. 
+
+### **Description**
 
 The whole body of work was divided into four parts: 
 - **Home Page**
