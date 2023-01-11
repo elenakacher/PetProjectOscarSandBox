@@ -1,4 +1,4 @@
-# Automated test project for an online bookstore <a href="https://latest.oscarcommerce.com/" target="_blank"> Oscar Sandbox</a>
+## Automated test project for an online bookstore <a href="https://latest.oscarcommerce.com/" target="_blank"> Oscar Sandbox</a>
 
 <a target="_blank">
   <img src="https://github.com/elenakacher/Project/blob/master/images/OscarSandbox.jpg">
