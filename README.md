@@ -28,10 +28,10 @@ The work with test-suites and test-cases was carried out in the **TestLink**.
 
 </details>
 
+During manual testing of the first version of the website, bugs were found, which I described in detail in the **Jira** software. An example of the description can be seen <a href="" target="_blank"> here</a>. I found a total of 10 bugs in the Basket section. 7 of them were fixed in the final version of the site and 2 are marked as features. 
 
-
-## Проект реализован с использованием
-Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
+## The project was implemented using
+Selenium Java Gradle IntelliJ IDEA Jenkins Jira TestLink MindMup
 
 
 # Запуск автотестов выполняется на сервере Jenkins
