@@ -18,7 +18,7 @@ The whole body of work was divided into four parts:
 - **Product**
 - **Basket**
   
-My colleague and I developed the **Basket** part. You can see the test plan <a href="https://docs.google.com/spreadsheets/d/1E53fUlBurmhZyhmSGJSuPg5L7KQCmIgu/edit?usp=sharing&ouid=107532909200609964385&rtpof=true&sd=true" target="_blank"> here</a>.
+My colleague and I developed the **Basket** part. You can see the **Test plan** <a href="https://docs.google.com/spreadsheets/d/1E53fUlBurmhZyhmSGJSuPg5L7KQCmIgu/edit?usp=sharing&ouid=107532909200609964385&rtpof=true&sd=true" target="_blank"> here</a>.
 
 The work with test-suites and test-cases was carried out in the **TestLink**.
 
@@ -37,5 +37,13 @@ During manual testing of the first version of the website, bugs were found, whic
 |--------|:-------|:-------|:-------|:-------|:-------|:-------|:-------| 
 |<a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/selenium.svg" alt="selenium" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/java-original-wordmark.svg" alt="java" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/gradle.svg" alt="gradle" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/intellij-idea.svg" alt="IntelliJ" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jenkins-original.svg" alt="jenkins" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jira.svg" alt="jira" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/testlink.png" alt="testlink" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/MindMup.png" alt="mindmup" width="40" height="40"/> </a>
 
+In addition to functional testing, the interface of the homepage and the catalogue page was also tested. 
+
+## What's special:
+
+- Page Object
+- Parameterized assembly
+- DataProvider for loading data from files
+- Logger for generating reports
 
 ## Autotests are run on the Jenkins server
