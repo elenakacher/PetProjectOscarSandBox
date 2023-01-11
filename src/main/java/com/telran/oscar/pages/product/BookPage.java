@@ -204,7 +204,7 @@ public class BookPage extends BasePage {
         return confirmMsg.getText();
     }
 
-    @FindBy(xpath = " //a[contains(text(),'Checkout now')]")
+    @FindBy(css = ".alertinner > a.btn.btn-info:nth-child(4)")
     WebElement checkoutBtn;
 
     public boolean isCheckoutNowBtnAppeared() {
@@ -214,5 +214,6 @@ public class BookPage extends BasePage {
     public BookPage addToWishListTest() {
         return this;
     }
+
 }
 

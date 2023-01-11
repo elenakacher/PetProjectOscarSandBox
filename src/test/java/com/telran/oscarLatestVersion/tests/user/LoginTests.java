@@ -17,7 +17,6 @@ public class LoginTests extends TestBaseLatestVersion {
         new LoginAndRegistrationPage(wd).userRegistrationWithoutConcat(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
         new HomePage(wd).clickOnLogoutBtn();
         new HomePage(wd).clickOnLoginButton();
-
     }
 
     @Test

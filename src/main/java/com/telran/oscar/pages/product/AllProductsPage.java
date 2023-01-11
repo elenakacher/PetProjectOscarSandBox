@@ -72,7 +72,7 @@ public class AllProductsPage extends BasePage {
         return viewBasketBtn.isDisplayed();
     }
 
-    @FindBy(xpath = "//div[@id= 'messages']/div[2]")
+    @FindBy(xpath = "//div[@id= 'messages']/div[3]//a[2]")
     WebElement checkoutNowBtn;
 
     public boolean isCheckoutNowButtonExists() {
@@ -286,8 +286,6 @@ public class AllProductsPage extends BasePage {
         return bottomNavigation.isDisplayed();
     }
 
-
-
     @FindBy(tagName = "img")
     List<WebElement> images;
 
@@ -477,6 +475,11 @@ public class AllProductsPage extends BasePage {
         }
         System.out.println(digit);
         return digit;
+    }
+
+    public AllProductsPage clickOnCheckoutNowButton() {
+        click(checkoutNowBtn);
+        return this;
     }
 }
 

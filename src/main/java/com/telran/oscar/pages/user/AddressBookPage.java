@@ -152,4 +152,11 @@ public class AddressBookPage extends BasePage {
         click(close);
         return this;
     }
+
+    @FindBy(tagName = "h1")
+    WebElement pageTitel;
+
+    public String getPageTitel() {
+        return pageTitel.getText();
+    }
 }

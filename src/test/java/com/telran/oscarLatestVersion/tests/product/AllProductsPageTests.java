@@ -2,6 +2,7 @@ package com.telran.oscarLatestVersion.tests.product;
 
 import com.telran.oscar.data.LoginPasswordData;
 import com.telran.oscar.pages.Basket.BasketPage;
+import com.telran.oscar.pages.Basket.ShippingAddressPage;
 import com.telran.oscar.pages.HomePage;
 import com.telran.oscar.pages.product.AllProductsPage;
 import com.telran.oscar.pages.product.BookPage;
@@ -26,6 +27,21 @@ public class AllProductsPageTests extends TestBaseLatestVersion {
         new HomePage(wd).clickOnViewBasketButton();
         Assert.assertTrue(new BasketPage(wd).getBookFirstTitel().contains("The shellcoder's handbook"));
         Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("The Cathedral &"));
+    }
+
+    @Test
+    public void checkOutButtonUnloggedUsserTest() {
+        new HomePage(wd).clickOnLogoutBtn();
+        new AllProductsPage(wd).addToBasket().clickOnCheckoutNowButton();
+        Assert.assertTrue(new ShippingAddressPage(wd).getPageTitelText().contains("Who are you?"));
+        new ShippingAddressPage(wd).HomePageLink();
+        new HomePage(wd).clickOnLoginButton().login(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
+    }
+
+    @Test
+    public void checkOutButtonLoggedUserTest() {
+        new AllProductsPage(wd).addToBasket().clickOnCheckoutNowButton();
+        Assert.assertTrue(new ShippingAddressPage(wd).getPageTitelText().contains("Shipping address"));;
     }
 
     @Test

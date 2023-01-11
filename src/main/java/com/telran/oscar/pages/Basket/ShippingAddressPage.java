@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.Collection;
+
 public class ShippingAddressPage extends BasePage {
     public ShippingAddressPage(WebDriver wd) {
         super(wd);
@@ -66,5 +68,20 @@ public class ShippingAddressPage extends BasePage {
         pause(1000);
         click(continBtn);
         return new OrderPreviewPage(wd);
+    }
+
+    @FindBy(css = ".sub-header")
+    WebElement pageTitel;
+
+    public String getPageTitelText() {
+        return pageTitel.getText();
+    }
+
+    @FindBy(css = ".col-sm-6.h1 a")
+    WebElement homeLinkOnHeader;
+
+    public HomePage HomePageLink() {
+        click(homeLinkOnHeader);
+        return new HomePage(wd);
     }
 }
