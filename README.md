@@ -1,11 +1,11 @@
-# Automated test project for an online bookstore <a target="_blank" href="https://latest.oscarcommerce.com/"> Oscar Sandbox</a>
+# Automated test project for an online bookstore <a href="https://latest.oscarcommerce.com/" target="_blank"> Oscar Sandbox</a>
 
 <a target="_blank">
   <img src="https://github.com/elenakacher/Project/blob/master/images/OscarSandbox.jpg">
 </a>
 
 The graduation paper of the Tel-Ran School testers' group. The whole body of work was divided into four parts: **Home Page, User, Product, Basket**. 
-My colleague and I developed the **Basket** part. You can see the test plan <a target="_blank" href="https://docs.google.com/spreadsheets/d/1E53fUlBurmhZyhmSGJSuPg5L7KQCmIgu/edit?usp=sharing&ouid=107532909200609964385&rtpof=true&sd=true"> here</a>.
+My colleague and I developed the **Basket** part. You can see the test plan <a href="https://docs.google.com/spreadsheets/d/1E53fUlBurmhZyhmSGJSuPg5L7KQCmIgu/edit?usp=sharing&ouid=107532909200609964385&rtpof=true&sd=true" target="_blank"> here</a>.
 
 <details><summary><b>Show Mind Map</b></summary>
 
