@@ -1,5 +1,5 @@
 ## Automated test project for an online bookstore <a href="https://latest.oscarcommerce.com/" target="_blank"> Oscar Sandbox</a>
-### The graduation paper of the Tel-Ran School testers' group. 
+The graduation paper of the Tel-Ran School testers' group. 
 
 <a target="_blank">
   <img src="https://github.com/elenakacher/Project/blob/master/images/OscarSandbox.jpg">
@@ -20,7 +20,7 @@ My colleague and I developed the **Basket** part. You can see the test plan <a h
 
 The work with test-suites and test-cases was carried out in the **TestLink**.
 
-<details><summary><b> Mind Map for the part **Basket** </b></summary>
+<details><summary> Mind Map for the part <b>Basket </b></summary>
 
 <a target="_blank" width="50%" heidth="50%">
   <img src="https://github.com/elenakacher/Project/blob/master/images/mindMap.jpg">
