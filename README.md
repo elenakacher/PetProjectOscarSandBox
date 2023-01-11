@@ -31,7 +31,7 @@ The work with test-suites and test-cases was carried out in the **TestLink**.
 </details>
 
 ## **Manual testing**
-During manual testing of the first version of the website, bugs were found, which I described in detail in the **Jira** software. An example of the description can be seen <a href="https://github.com/elenakacher/Project/blob/master/images/bugReports.pdf" target="_blank"> here</a>. I found a total of 10 bugs in the Basket section. 7 of them were fixed in the final version of the site and 2 are marked as features. 
+During manual testing of the first version of the website, bugs were found, which I described in detail in the **Jira** software. An example of the description of some bugs can be seen <a href="https://github.com/elenakacher/Project/blob/master/images/bugReports.pdf" target="_blank"> here</a>. I found a total of 10 bugs in the Basket section. 7 of them were fixed in the final version of the site and 2 are marked as features. 
 
 ## **Automated testing**
 
@@ -39,12 +39,12 @@ During manual testing of the first version of the website, bugs were found, whic
 UI testing was carried out on the Homepage, Book page and the Products page.
 - Check of the broken links on the Homepage
 - Check of the Breadcrumbs on Products and Book page 
-- Check of defined submenu items for the Catalogue menu on the Products page
+- Check of required submenu items for the Catalogue menu on the Products page
 - Check of the required information on the Book page
 
 ### **Functional testing. What's special:**
 
-- Page Object
+- Page Object Model
 - Parameterized assembly
 - DataProvider for loading data from files
 - Logger for generating reports
