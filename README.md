@@ -7,7 +7,7 @@
 
 <details><summary><b>Show MindMap</b></summary>
 
-<a target="_blank">
+<a target="_blank" width="50%" heidth="50%">
   <img src="https://github.com/elenakacher/Project/blob/master/images/mindMap.jpg">
 </a>
 
