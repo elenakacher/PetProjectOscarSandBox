@@ -1,11 +1,15 @@
-# Automated Test project for an online bookstore
+# Automated test project for an online bookstore
 > <a target="_blank" href="https://latest.oscarcommerce.com/"> Oscar Sandbox</a>
 
-![HomePage]()
+<a target="_blank">
+  <img src="https://github.com/elenakacher/Project/blob/master/images/OscarSandbox.jpg">
+</a>
 
 <details><summary><b>Show MindMap</b></summary>
 
-![HomePage](https://github.com/elenakacher/elenakacher/blob/main/assets/mindMap.jpg)
+<a target="_blank">
+  <img src="https://github.com/elenakacher/Project/blob/master/images/mindMap.jpg">
+</a>
 
 </details>
 
