@@ -40,7 +40,7 @@ Selenium Java Gradle IntelliJ IDEA Jenkins Jira TestLink MindMup
 <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jenkins-original.svg" alt="jenkins" width="40" height="40"/> </a> 
 <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jira.svg" alt="jira" width="40" height="40"/> </a> 
 <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/testlink.png" alt="testlink" width="40" height="40"/> </a> 
-<a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/mindMup.png" alt="mindmup" width="40" height="40"/> </a>
+<a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/MindMup.png" alt="mindmup" width="40" height="40"/> </a>
 
 # Запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/09-ElenaSeversk-unit13/">Ссылка на проект в Jenkins</a>
