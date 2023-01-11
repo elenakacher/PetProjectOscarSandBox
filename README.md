@@ -1,4 +1,4 @@
-## Automated test project for an online bookstore <a href="https://latest.oscarcommerce.com/" target="_blank"> Oscar Sandbox</a>
+## **Automated test project for an online bookstore** <a href="https://latest.oscarcommerce.com/" target="_blank"> <b> Oscar Sandbox </b></a>
 The graduation paper of the Tel-Ran School testers' group. 
 
 <a target="_blank">
@@ -30,23 +30,23 @@ The work with test-suites and test-cases was carried out in the **TestLink**.
 
 </details>
 
-## Manual testing 
+## **Manual testing**
 During manual testing of the first version of the website, bugs were found, which I described in detail in the **Jira** software. An example of the description can be seen <a href="https://github.com/elenakacher/Project/blob/master/images/bugReports.pdf" target="_blank"> here</a>. I found a total of 10 bugs in the Basket section. 7 of them were fixed in the final version of the site and 2 are marked as features. 
 
-## UI testing
-In addition to functional testing, the UI of the homepage and the catalogue page. 
+## **Automated testing**
 
+### **UI testing**
+UI testing was carried out on the homepage and the catalogue page.  
 
-## Automated testing
-
-## What's special:
+### **Functional testing** 
+### What's special:
 
 - Page Object
 - Parameterized assembly
 - DataProvider for loading data from files
 - Logger for generating reports
   
-## The automation of testing was implemented using
+### The automation of testing was implemented using
 | Selenium | Java | Gradle | IntelliJ IDEA | Jenkins | Jira | TestLink | MindMup
 |--------|:-------|:-------|:-------|:-------|:-------|:-------|:-------| 
 |<a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/selenium.svg" alt="selenium" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/java-original-wordmark.svg" alt="java" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/gradle.svg" alt="gradle" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/intellij-idea.svg" alt="IntelliJ" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jenkins-original.svg" alt="jenkins" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jira.svg" alt="jira" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/testlink.png" alt="testlink" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/MindMup.png" alt="mindmup" width="40" height="40"/> </a>
