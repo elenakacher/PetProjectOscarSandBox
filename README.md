@@ -37,8 +37,8 @@ During manual testing of the first version of the website, bugs were found, whic
 
 ### **UI testing**
 UI testing was carried out on the Homepage, Book page and the Products page.
-- Check for broken links on the Homepage
-- Check for Breadcrumbs on Products and Book page 
+- Check of the broken links on the Homepage
+- Check of the Breadcrumbs on Products and Book page 
 - Check of defined submenu items for the Catalogue menu on the Products page
 - Check of the required information on the Book page
 
