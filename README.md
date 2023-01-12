@@ -20,9 +20,15 @@ The whole body of work was divided into four parts:
   
 My colleague and I developed the **Basket** part. You can see the **Test plan** <a href="https://docs.google.com/spreadsheets/d/1E53fUlBurmhZyhmSGJSuPg5L7KQCmIgu/edit?usp=sharing&ouid=107532909200609964385&rtpof=true&sd=true" target="_blank"> here</a>.
 
-The work with test-suites and test-cases was carried out in the **TestLink**.
+<details><summary> Example of <b>test-suites</b> and <b>test-case</b> in the <b>TestLink</b> </summary>
 
-<details><summary> Mind Map for the part <b>Basket </b></summary>
+<a target="_blank" width="50%" heidth="50%">
+  <img src="https://github.com/elenakacher/Project/blob/master/images/testlinkExample.jpg">
+</a>
+
+</details>
+
+<details><summary> <b>Mind Map</b> for the part <b>Basket </b></summary>
 
 <a target="_blank" width="50%" heidth="50%">
   <img src="https://github.com/elenakacher/Project/blob/master/images/mindMap.jpg">
