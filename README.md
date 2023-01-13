@@ -54,7 +54,7 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 - Parameterized assembly
 - Regex
 - DataProvider for loading data from files
-- Logger for generating reports
+- MyLisener for generating reports
 - Autotests are run on the Jenkins server
   
 Testing was implemented using:
