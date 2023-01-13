@@ -52,6 +52,7 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 
 - Page Object Model
 - Parameterized assembly
+- Regex
 - DataProvider for loading data from files
 - Logger for generating reports
 - Autotests are run on the Jenkins server
