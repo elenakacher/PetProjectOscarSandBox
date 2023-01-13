@@ -13,7 +13,6 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.testng:testng:7.6.0'
     implementation 'ch.qos.logback:logback-classic:1.2.11'
-
     implementation 'ru.yandex.qatools.ashot:ashot:1.5.4'
 
 }
@@ -27,3 +26,29 @@ task testngSmoky(type:Test) {
         suites 'src/test/resources/testngSmoky.xml'
     }
 }
+
+task testngRegression(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngRegression.xml'
+    }
+}
+
+task testngUser(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngUserPositive.xml'
+    }
+}
+
+task testngProduct(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngProductsPositive.xml'
+    }
+}
+
+task testngBasket(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngBasketPositive.xml'
+    }
+}
+
+

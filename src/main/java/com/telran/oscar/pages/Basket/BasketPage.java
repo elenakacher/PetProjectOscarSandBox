@@ -1,6 +1,7 @@
 package com.telran.oscar.pages.Basket;
 
 import com.telran.oscar.pages.BasePage;
+import com.telran.oscar.pages.product.AllProductsPage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,20 +15,13 @@ public class BasketPage extends BasePage {
     }
 
     @FindBy(xpath = "//form[@class = 'basket_summary']/div[1]//h3")
-    WebElement bookFirstTitel;
+    WebElement bookTitel;
 
-    @FindBy(xpath = "//form[@class = 'basket_summary']/div[2]//h3")
-    WebElement bookLastTitel;
-
-    public String getBookFirstTitel() {
-        return bookFirstTitel.getText();
+    public String getBookTitel() {
+        return bookTitel.getText();
     }
 
-    public String getBookLastTitel() {
-        return bookLastTitel.getText();
-    }
-
-    @FindBy(css = ".col-sm-4.offset-sm-8")
+    @FindBy(css = ".btn.btn-lg.btn-primary.btn-block")
     WebElement proceedToCheckoutBtn;
 
     public ShippingAddressPage clickOnProceedToCheckoutButton() {
@@ -48,15 +42,8 @@ public class BasketPage extends BasePage {
         return this;
     }
 
-    @FindBy(css = "tr:nth-child(2) > th.total.text-right:nth-child(2)")
-    WebElement totalAmount;
-
-    public String getTotalAmountNumber() {
-        return totalAmount.getText();
-    }
-
     public BasketPage clickOnBookTitel() {
-        click(bookFirstTitel);
+        click(bookTitel);
         return this;
     }
 
@@ -71,34 +58,18 @@ public class BasketPage extends BasePage {
     @FindBy(css = ".dropdown-menu.show")
     WebElement dropdownMenuShow;
 
-
     public boolean isBrowseStoreDropdownMenuPresent() {
         return dropdownMenuShow.isDisplayed();
-    }
-
-    @FindBy(css = "#id_form-0-quantity.form-control")
-    WebElement quantity1;
-
-    @FindBy(id = "id_form-1-quantity")
-    WebElement quantity2;
-
-    public void deleteBooks() {
-        quantity1.clear();
-        type(quantity1, "0");
-        quantity2.clear();
-        type(quantity2, "0");
-        click(updateQuantity);
     }
 
     @FindBy(id = "content_inner")
     WebElement basketIsEmptyMsg;
 
     public String getBasketIsEmptyMsg() {
-        System.out.println(basketIsEmptyMsg.getText());
         return basketIsEmptyMsg.getText();
     }
 
-    @FindBy(xpath = "//div[@class='basket-items'][1]//div[@class='basket-line-actions']/a[1]")
+    @FindBy(css = ".basket-line-actions")
     WebElement removeBtn;
 
     public BasketPage clickOnRemoveBtn() {
@@ -106,19 +77,14 @@ public class BasketPage extends BasePage {
         return this;
     }
 
+    @FindBy(id = "id_form-0-quantity")
+    WebElement quantity;
+
     public BasketPage changeQuantity(String number) {
-        quantity1.clear();
-        type(quantity1, number);
+        quantity.clear();
+        type(quantity, number);
         click(updateQuantity);
         return this;
-    }
-
-    @FindBy(css = "tr:nth-child(2) > td.text-right:nth-child(2)")
-    WebElement totalAmountWithDiscount;
-
-    public String getTotalAmountNumberWithDiscount() {
-        System.out.println(totalAmountWithDiscount.getText());
-        return totalAmountWithDiscount.getText();
     }
 
     @FindBy(xpath = "//div[@class='basket-items'][1]//div[@class='basket-line-actions']/a[2]")
@@ -129,7 +95,7 @@ public class BasketPage extends BasePage {
         return this;
     }
 
-    @FindBy(css = ".card.card-body .sub-header h2")
+    @FindBy(css = ".sub-header")
     WebElement itemsToBuyLaterTitel;
 
     public boolean isItemsToBuyLaterAppered() {
@@ -145,17 +111,57 @@ public class BasketPage extends BasePage {
     }
 
     public String getQuantity() {
-        System.out.println(quantity1.getAttribute("value"));
-        return quantity1.getAttribute("value");
+        return quantity.getAttribute("value");
     }
 
     public BasketPage incQuantity() {
-        quantity1.sendKeys(Keys.ARROW_UP);
+        quantity.sendKeys(Keys.ARROW_UP);
+        click(updateQuantity);
         return this;
     }
 
     public BasketPage decQuantity() {
-        quantity1.sendKeys(Keys.ARROW_DOWN);
+        quantity.sendKeys(Keys.ARROW_DOWN);
+        click(updateQuantity);
         return this;
+    }
+
+    @FindBy(css = ".basket-items:nth-child(6) :nth-child(4)")
+    WebElement priceForOne;
+
+    public double getPriceForOne() {
+        double numb1 = Double.parseDouble(priceForOne.getText().substring(1));
+        return numb1;
+    }
+
+    @FindBy(css = ".basket-items .col-md-2 .price_color")
+    WebElement totalAmountForMany;
+
+    public double getTotalAmountForMany() {
+        double numb2 = Double.parseDouble(totalAmountForMany.getText().substring(1));
+        return numb2;
+    }
+
+    @FindBy(css = ".table.table-sm tr:nth-child(2) .text-right")
+    WebElement basketTotal;
+
+    public double getBasketTotal() {
+        double numb3 = Double.parseDouble(basketTotal.getText().substring(1));
+        return numb3;
+    }
+
+    @FindBy(css = ".page-header")
+    WebElement pageTitel;
+
+    public String getPageTitel() {
+        return pageTitel.getText();
+    }
+
+    @FindBy(css = ".row .col-sm-4:nth-child(2)")
+    WebElement continueShoppingBtn;
+
+    public AllProductsPage clickOnContinueShoppingButton() {
+        click(continueShoppingBtn);
+        return new AllProductsPage(wd);
     }
 }

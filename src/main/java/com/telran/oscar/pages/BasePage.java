@@ -1,5 +1,6 @@
 package com.telran.oscar.pages;
 
+import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -61,7 +62,7 @@ public class BasePage {
                         .scaling(1.5f), 1000)).takeScreenshot(wd);
         try {
             ImageIO.write(screen.getImage(), "png",
-                    new File("screenshot/screen" + System.currentTimeMillis() + ".png"));
+                    new File("screenshots/screen" + System.currentTimeMillis() + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -74,11 +75,22 @@ public class BasePage {
     @FindBy(id = "id_password")
     WebElement pwdField;
 
-    @FindBy(xpath = "//button[.='Delete']")
+    @FindBy(css = ".btn.btn-lg.btn-danger")
     WebElement deleteBtn;
+
+    @FindBy(css = ".icon-user")
+    WebElement accountLinkOldVersion;
 
     @FindBy(css = ".nav-link.mt-2.mt-lg-0")
     WebElement accountLink;
+
+    public HomePage deleteUserOldVersion(String pwd) {
+        click(accountLinkOldVersion);
+        click(deleteProfileBtn);
+        type(pwdField, pwd);
+        click(deleteBtn);
+        return new HomePage(wd);
+    }
 
     public HomePage deleteUser(String pwd) {
         click(accountLink);
@@ -108,4 +120,13 @@ public class BasePage {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
     }
 
+    public void takeScreenshotMyListener(String pathToFile) {
+        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File(pathToFile);
+        try {
+            Files.copy(tmp, screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

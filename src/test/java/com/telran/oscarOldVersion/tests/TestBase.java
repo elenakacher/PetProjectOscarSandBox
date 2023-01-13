@@ -1,21 +1,22 @@
 package com.telran.oscarOldVersion.tests;
 
 import com.telran.oscar.pages.HomePage;
+import com.telran.oscar.utils.MyListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.testng.ITestResult;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public WebDriver wd;
+    //public WebDriver wd;
+
+    public EventFiringWebDriver wd;
+
+
 
     /*@BeforeMethod
     public void init() {
@@ -28,18 +29,19 @@ public class TestBase {
 
     @BeforeMethod
     public void init() {
-        wd = new ChromeDriver();
+        //wd = new ChromeDriver();
+        wd = new EventFiringWebDriver(new ChromeDriver());
         wd.get("http://selenium1py.pythonanywhere.com");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        new HomePage(wd).selectLanguage("British English");
+        wd.register(new MyListener());
 
+        new HomePage(wd).selectLanguage("British English");
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void tierDown () {
         wd.quit();
     }
-
 }

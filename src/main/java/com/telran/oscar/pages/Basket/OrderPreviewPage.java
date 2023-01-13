@@ -14,7 +14,32 @@ public class OrderPreviewPage extends BasePage {
     WebElement placeOrder;
 
     public OrderConfirmationPage clickOnPlaceOrderButton() {
-        clickWithJSExecutor(placeOrder, 800, 0);
+        click(placeOrder);
         return new OrderConfirmationPage(wd);
     }
+
+    @FindBy(css = ".row.shipping-payment .col-sm-6:nth-child(1) .card:nth-child(2) .float-right")
+    WebElement changeAddressBtn;
+
+    public ShippingAddressPage clickOnChangeAddressBtn() {
+        click(changeAddressBtn);
+        return new ShippingAddressPage(wd);
+    }
+
+    @FindBy(css = ".row.shipping-payment .col-sm-6:nth-child(2) .card:nth-child(2) .float-right")
+    WebElement changePaymentBtn;
+
+    public BasketPage clickOnChangePaymentBtn() {
+        click(changePaymentBtn);
+        return new BasketPage(wd);
+    }
+
+    @FindBy(css = ".page_inner .sub-header:nth-child(4) .float-right")
+    WebElement editOrderBtn;
+
+    public BasketPage clickOnEditOrderButton() {
+        click(editOrderBtn);
+        return new BasketPage(wd);
+    }
 }
+

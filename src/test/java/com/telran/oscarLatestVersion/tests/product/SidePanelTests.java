@@ -21,43 +21,43 @@ public class SidePanelTests extends TestBaseLatestVersion {
     @Test
     public void isClosingLinkRedirectsToClothingPage() {
         new AllProductsPage(wd).clickOnClothingLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Clothing"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Clothing"));
     }
 
     @Test
     public void isBooksLinkRedirectsToBooksPage() {
         new AllProductsPage(wd).clickOnBooksLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Books"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Books"));
     }
 
     @Test
     public void isFiktionLinkRedirectsToFictionPage() {
         new AllProductsPage(wd).clickOnFictionLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Fiction"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Fiction"));
     }
 
     @Test
     public void isCompInLitLinkRedirectsToCompInLitPage() {
         new AllProductsPage(wd).clickOnComputersInLiteratureLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Computers in Literature"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Computers in Literature"));
     }
 
     @Test
     public void isNonFoctionLinkRedirectsToNonFictionPage() {
         new AllProductsPage(wd).clickOnNonFictionLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Non-Fiction"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Non-Fiction"));
     }
 
     @Test
     public void isEssentialProgrLinkRedirectsToEssentialProgrPage() {
         new AllProductsPage(wd).clickOnEssentialProgrammingLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Essential programming"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Essential programming"));
     }
 
     @Test
     public void isHackingLinkRedirectsToHackingPage() {
         new AllProductsPage(wd).clickOnHackingLink();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().contains("Hacking"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().contains("Hacking"));
     }
 
     @AfterMethod(enabled = true)

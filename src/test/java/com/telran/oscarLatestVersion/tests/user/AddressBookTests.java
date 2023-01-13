@@ -38,7 +38,8 @@ public class AddressBookTests extends TestBaseLatestVersion {
                 AddressData.LAST_NAME2, AddressData.FIRST_LINE_OF_ADDRESS2,
                 AddressData.CITY2, AddressData.POST_CODE2);
         new AddressBookPage(wd).selectCountry("Germany").clickOnCancelBtn();
-        Assert.assertFalse(new AddressBookPage(wd).isConfirmMessagePresent());
+        Assert.assertTrue(new AddressBookPage(wd).isAddressBookEmptyMsg().contains("There are no addresses in your address book."));
+
     }
 
     @Test
@@ -70,7 +71,7 @@ public class AddressBookTests extends TestBaseLatestVersion {
         new AddressBookPage(wd).clickOnEditBtn().editAllRequiredFields(AddressData.FIRST_NAME2,
                 AddressData.LAST_NAME2, AddressData.FIRST_LINE_OF_ADDRESS2,
                 AddressData.CITY2, AddressData.POST_CODE2).clickOnSaveBtn();
-        Assert.assertTrue(new AddressBookPage(wd).isConfirmMessageText().contains
+        Assert.assertTrue(new AddressBookPage(wd).getConfirmMessageText().contains
                 ("Address '" + AddressData.FIRST_NAME2 + " " + AddressData.LAST_NAME2 +
                         ", " + AddressData.FIRST_LINE_OF_ADDRESS2 + ", " +
                         AddressData.CITY2 + ", " + AddressData.POST_CODE2 + ", Germany' updated"));
@@ -85,7 +86,16 @@ public class AddressBookTests extends TestBaseLatestVersion {
         new AddressBookPage(wd).clickOnEditBtn().editAllRequiredFields(AddressData.FIRST_NAME2,
                 AddressData.LAST_NAME2, AddressData.FIRST_LINE_OF_ADDRESS2,
                 AddressData.CITY2, AddressData.POST_CODE2).clickOnCancelBtn();
-        Assert.assertFalse(new AddressBookPage(wd).isConfirmMessagePresent());
+        Assert.assertTrue(new AddressBookPage(wd).getAddressText().contains
+                (AddressData.FIRST_NAME1));
+        Assert.assertTrue(new AddressBookPage(wd).getAddressText().contains
+                (AddressData.LAST_NAME1));
+        Assert.assertTrue(new AddressBookPage(wd).getAddressText().contains
+                (AddressData.FIRST_LINE_OF_ADDRESS1));
+        Assert.assertTrue(new AddressBookPage(wd).getAddressText().contains
+                (AddressData.CITY1));
+        Assert.assertTrue(new AddressBookPage(wd).getAddressText().contains
+                (AddressData.POST_CODE1));
     }
 
     @Test

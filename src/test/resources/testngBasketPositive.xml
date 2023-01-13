@@ -4,29 +4,12 @@
 
     <test name="Basket" >
         <classes>
-            <class name="com.telran.oscarLatestVersion.tests.basket.BasketTests">
-                <methods>
-                    <exclude name=".*Negative.*"></exclude>
-                </methods>
+            <class name="com.telran.oscarLatestVersion.tests.basket.BasketForLoggedUserTests">
             </class>
 
             <class name="com.telran.oscarLatestVersion.tests.basket.BasketForUnloggedUserTests">
-                <methods>
-                    <exclude name=".*Negative.*"></exclude>
-                </methods>
             </class>
 
-            <class name="com.telran.oscarLatestVersion.tests.basket.CheckOutForLoggedUser">
-                <methods>
-                    <exclude name=".*Negative.*"></exclude>
-                </methods>
-            </class>
-
-            <class name="com.telran.oscarLatestVersion.tests.basket.CheckOutForUnloggedUser">
-                <methods>
-                    <exclude name=".*Negative.*"></exclude>
-                </methods>
-            </class>
         </classes>
     </test>
 </suite>

@@ -59,13 +59,11 @@ public class ShippingAddressPage extends BasePage {
     WebElement continBtn;
 
     public ShippingAddressPage clickOnFirstContinueButton() {
-        pause(1000);
         clickWithJSExecutor(continBtn, 600, 0);
         return this;
     }
 
     public OrderPreviewPage clickOnSecondContinueButton() {
-        pause(1000);
         click(continBtn);
         return new OrderPreviewPage(wd);
     }

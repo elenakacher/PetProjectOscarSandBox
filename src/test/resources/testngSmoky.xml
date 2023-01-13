@@ -2,13 +2,6 @@
 
 <suite name="OscarLogin" verbose="1" >
 
-    <test name="Registration" >
-        <classes>
-            <class name="com.telran.oscarOldVersion.tests.user.RegistrationTests">
-            </class>
-        </classes>
-    </test>
-
     <test name="PlaceOrder" >
         <classes>
             <class name="com.telran.oscarOldVersion.tests.basket.PlaceOrderTests">

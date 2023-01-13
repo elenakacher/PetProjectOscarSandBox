@@ -17,8 +17,15 @@ public class RegistrationTests extends TestBaseLatestVersion {
     }
 
     @Test(dataProvider = "regUserDataWithCsv", dataProviderClass = DataProviders.class)
-    public void registrationPositiveTest(String email, String password) {
+    public void registrationPositiveTestWithCsv(String email, String password) {
         new LoginAndRegistrationPage(wd).userRegistrationWithDataProvider(email, password).deleteUser(password);
+    }
+
+    @Test
+    public void registrationPositiveTest() {
+        new LoginAndRegistrationPage(wd).userRegistrationWithoutConcat(
+                LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1)
+                .deleteUser(LoginPasswordData.USER_PASSWORD1);
     }
 
     @Test
@@ -47,13 +54,13 @@ public class RegistrationTests extends TestBaseLatestVersion {
      }
 
     @Test(dataProvider = "regInvalidUserEmailWithCsv", dataProviderClass = DataProviders.class)
-    public void registrationInvalidEmailNegativeTest(String email, String password) {
+    public void registrationInvalidEmailNegativeTestWithCsv(String email, String password) {
         new LoginAndRegistrationPage(wd).userRegistrationWithDataProvider(email, password);
         Assert.assertTrue(new LoginAndRegistrationPage(wd).isRegBtnExists());
     }
 
     @Test(dataProvider = "regInvalidUserPasswordWithCsv", dataProviderClass = DataProviders.class)
-    public void registrationInvalidPasswordNegativeTest(String email, String password) {
+    public void registrationInvalidPasswordNegativeTestWithCsv(String email, String password) {
         new LoginAndRegistrationPage(wd).userRegistrationWithDataProvider(email, password);
         Assert.assertTrue(new LoginAndRegistrationPage(wd).isRegBtnExists());
     }

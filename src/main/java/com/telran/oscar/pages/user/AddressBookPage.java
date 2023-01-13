@@ -1,8 +1,6 @@
 package com.telran.oscar.pages.user;
 
 import com.telran.oscar.pages.BasePage;
-import com.telran.oscar.pages.Basket.ShippingAddressPage;
-import com.telran.oscar.pages.HomePage;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -134,7 +132,7 @@ public class AddressBookPage extends BasePage {
         return this;
     }
 
-    public String isConfirmMessageText() {
+    public String getConfirmMessageText() {
         return confirmationMessage.getText();
     }
 
@@ -158,5 +156,20 @@ public class AddressBookPage extends BasePage {
 
     public String getPageTitel() {
         return pageTitel.getText();
+    }
+
+    @FindBy(css = ".col-sm-8.col-md-9")
+    WebElement addressBookEmptyMsg;
+
+    public String isAddressBookEmptyMsg() {
+        System.out.println(addressBookEmptyMsg.getText());
+        return addressBookEmptyMsg.getText();
+    }
+
+    @FindBy(css = "td:nth-child(1)")
+    WebElement addressText;
+
+    public String getAddressText() {
+        return addressText.getText();
     }
 }

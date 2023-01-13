@@ -37,7 +37,10 @@ public class HomePage extends BasePage {
         return new LoginAndRegistrationPage(wd);
     }
 
-    @FindBy(css = ".far.fa-user.mr-2")
+    @FindBy(css = ".icon-user")
+    WebElement accountLinkOldVersion;
+
+    @FindBy(css = ".nav-link.mt-2.mt-lg-0")
     WebElement accountLink;
 
     public boolean isAccountCreated() {
@@ -50,6 +53,11 @@ public class HomePage extends BasePage {
     public HomePage clickOnLogoutBtn() {
         click(logOutLink);
         return this;
+    }
+
+    public ProfilePage clickOnAccountButtonOldVersion() {
+        click(accountLink);
+        return new ProfilePage(wd);
     }
 
     public ProfilePage clickOnAccountButton() {
@@ -65,7 +73,7 @@ public class HomePage extends BasePage {
         return new AllProductsPage(wd);
     }
 
-    @FindBy(xpath = "//div[@class = 'btn-group']/button[1]")
+    @FindBy(css = ".btn-group")
     WebElement viewBasket;
 
     public BasketPage clickOnViewBasketButton() {

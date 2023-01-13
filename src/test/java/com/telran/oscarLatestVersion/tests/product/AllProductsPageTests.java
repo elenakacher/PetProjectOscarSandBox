@@ -23,55 +23,28 @@ public class AllProductsPageTests extends TestBaseLatestVersion {
 
     @Test
     public void addToBasketTest() {
-        new AllProductsPage(wd).addToBasket();
+        new AllProductsPage(wd).addToBasket(2);
         new HomePage(wd).clickOnViewBasketButton();
-        Assert.assertTrue(new BasketPage(wd).getBookFirstTitel().contains("The shellcoder's handbook"));
-        Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("The Cathedral &"));
+        Assert.assertTrue(new BasketPage(wd).getBookTitel().contains("Hacking Exposed Wireless"));
     }
 
     @Test
-    public void checkOutButtonUnloggedUsserTest() {
-        new HomePage(wd).clickOnLogoutBtn();
-        new AllProductsPage(wd).addToBasket().clickOnCheckoutNowButton();
-        Assert.assertTrue(new ShippingAddressPage(wd).getPageTitelText().contains("Who are you?"));
-        new ShippingAddressPage(wd).HomePageLink();
-        new HomePage(wd).clickOnLoginButton().login(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
-    }
-
-    @Test
-    public void checkOutButtonLoggedUserTest() {
-        new AllProductsPage(wd).addToBasket().clickOnCheckoutNowButton();
-        Assert.assertTrue(new ShippingAddressPage(wd).getPageTitelText().contains("Shipping address"));;
-    }
-
-    @Test
-    public void addToBasketPriceOnHeaderCompareTest() {
-        new AllProductsPage(wd).addToBasket();
-        Assert.assertTrue(new AllProductsPage(wd).getBasketTotal1().contains("20.98"));
-    }
-
-    @Test
-    public void addToBasketPriceOnAllProductsPageCompareTest() {
-        new AllProductsPage(wd).addToBasket();
-        Assert.assertTrue(new AllProductsPage(wd).getBasketTotal2().contains("20.98"));
+    public void addToBasketPricesCompareTest() {
+        new AllProductsPage(wd).addToBasket(2);
+        double priceOnHeader = new AllProductsPage(wd).getBasketTotalOnHeader();
+        double bookPrice = new AllProductsPage(wd).getBookPrice();
+        double priceOnPage = new AllProductsPage(wd).getpriceOnPage();
+        new HomePage(wd).clickOnViewBasketButton();
+        double priceInBasket = new BasketPage(wd).getPriceForOne();
+        Assert.assertEquals(bookPrice, priceOnHeader);
+        Assert.assertEquals(priceOnHeader, priceOnPage);
+        Assert.assertEquals(priceOnPage, priceInBasket);
     }
 
     @Test
     public void addToBasketConfirmMessageTest() {
-        new AllProductsPage(wd).addToBasket();
+        new AllProductsPage(wd).addToBasket(2);
         Assert.assertTrue(new AllProductsPage(wd).getConfirmMessage().contains("has been added to your basket"));
-    }
-
-    @Test
-    public void addToBasketCheckoutButtonTest() {
-        new AllProductsPage(wd).addToBasket();
-        Assert.assertTrue(new AllProductsPage(wd).isCheckoutNowButtonExists());
-    }
-
-    @Test
-    public void addToBasketViewBasketButtonTest() {
-        new AllProductsPage(wd).addToBasket();
-        Assert.assertTrue(new AllProductsPage(wd).isViewBasketButtonExists());
     }
 
     @Test
@@ -100,34 +73,34 @@ public class AllProductsPageTests extends TestBaseLatestVersion {
         new AllProductsPage(wd).clickOnComputersInLiteratureLink();
         Assert.assertTrue(new AllProductsPage(wd).getbreadCrumbsText().contains("Home\n" + "Books\n" +
                 "Fiction\n" + "Computers in Literature"));
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("Computers in Literature"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("Computers in Literature"));
         new AllProductsPage(wd).clickOnFictionLinkOnBreadcrumbs();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("Fiction"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("Fiction"));
 
         new AllProductsPage(wd).clickOnEssentialProgrammingLink();
         Assert.assertTrue(new AllProductsPage(wd).getbreadCrumbsText().contains("Home\n" +
                 "Books\n" + "Non-Fiction\n" + "Essential programming"));
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("Essential programming"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("Essential programming"));
 
         new AllProductsPage(wd).clickOnHackingLink();
         Assert.assertTrue(new AllProductsPage(wd).getbreadCrumbsText().contains("Home\n" +
                 "Books\n" + "Non-Fiction\n" + "Hacking"));
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("Hacking"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("Hacking"));
 
         new AllProductsPage(wd).clickOnNonFictionLinkOnBreadcrumbs();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("Non-Fiction"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("Non-Fiction"));
 
         new AllProductsPage(wd).clickOnBooksLinkOnBreadcrumbs();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("Books"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("Books"));
 
         new AllProductsPage(wd).clickOnHomeLinkOnBreadcrumbs();
-        Assert.assertTrue(new AllProductsPage(wd).getPageTitelText().equals("All products"));
+        Assert.assertTrue(new AllProductsPage(wd).getPageTitel().equals("All products"));
 
     }
 
     @AfterMethod(enabled = true)
     public void TierDown() {
-        new HomePage(wd).clickOnOscarLink().deleteUser(LoginPasswordData.USER_PASSWORD1);
+        new HomePage(wd).clickOnOscarLink().clickOnAccountButton().deleteUser(LoginPasswordData.USER_PASSWORD1);
     }
 
 }

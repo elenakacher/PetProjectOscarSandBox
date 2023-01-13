@@ -22,7 +22,7 @@ public class UserProfileTests extends TestBaseLatestVersion {
     }
 
     @Test (dataProvider = "EditProfileWithInvalidEmailWithCsv", dataProviderClass = DataProviders.class)
-    public void editProfileWithInvalidEmailNegativeTest(String email) {
+    public void editProfileWithInvalidEmailNegativeTestWithCsv(String email) {
         new ProfilePage(wd).clickOnEditProfileBtn().editEmail(email).clickOnSaveBnt();
         Assert.assertTrue(new ProfilePage(wd).isSaveBtnPresent());
     }
@@ -36,7 +36,8 @@ public class UserProfileTests extends TestBaseLatestVersion {
     @Test
     public void cancelChangePasswordPositiveTest() {
         new ProfilePage(wd).changePassword(LoginPasswordData.USER_PASSWORD1, LoginPasswordData.USER_PASSWORD2).clickOnCancelBnt();
-        Assert.assertFalse(new ProfilePage(wd).isConfirmationMsgPresent());
+        new HomePage(wd).clickOnLogoutBtn().clickOnLoginButton().login(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
+        Assert.assertTrue(new HomePage(wd).isAccountCreated());
     }
 
     @Test

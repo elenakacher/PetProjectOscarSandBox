@@ -1,6 +1,7 @@
 package com.telran.oscar.pages.product;
 
 import com.telran.oscar.pages.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Collection;
 import java.util.List;
 
 public class AllProductsPage extends BasePage {
@@ -16,15 +16,16 @@ public class AllProductsPage extends BasePage {
         super(wd);
     }
 
-    @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[1]//button")
-    WebElement bookFirst;
+    public AllProductsPage addToBasket(int number) {
+        wd.findElement(By.cssSelector(".col-sm-6:nth-child(" + number + ") .btn")).click();
+        return this;
+    }
 
-    @FindBy(xpath = "//ol[@class = 'row list-unstyled ml-0 pl-0']/li[20]//button")
-    WebElement bookLast;
+    @FindBy(css = ".col-xs-6:nth-child(1) .btn.btn-primary.btn-block")
+    WebElement addToBasketBtn;
 
-    public AllProductsPage addToBasket() {
-        click(bookFirst);
-        clickWithJSExecutor(bookLast, 800, 0);
+    public AllProductsPage addToBasketOldVersion() {
+        click(addToBasketBtn);
         return this;
     }
 
@@ -108,7 +109,7 @@ public class AllProductsPage extends BasePage {
     @FindBy(css = ".page-header")
     WebElement pageTitel;
 
-    public String getPageTitelText() {
+    public String getPageTitel() {
         return pageTitel.getText();
     }
 
@@ -201,11 +202,11 @@ public class AllProductsPage extends BasePage {
     }
 
     @FindBy(css = ".basket-mini.col-sm-5.text-right.d-none.d-md-block")
-    WebElement basketTotalOnHeadertext;
+    WebElement priceOnHeadertext;
 
     public boolean isBasketTotalTextPresent() {
-        System.out.println(basketTotalOnHeadertext.getText());
-        return basketTotalOnHeadertext.isDisplayed();
+        System.out.println(priceOnHeadertext.getText());
+        return priceOnHeadertext.isDisplayed();
     }
 
     @FindBy(css = "button.btn.btn-outline-secondary:nth-child(1)")
@@ -450,36 +451,31 @@ public class AllProductsPage extends BasePage {
         return randomBookLastAddToBasket.isDisplayed();
     }
 
-    public String getBasketTotal1() {
-        String text = basketTotalOnHeadertext.getText();
-        String digit = "";
-        for (int i = 0; i < text.length(); i++) {
-            char ch = text.charAt(i);
-            if (Character.isDigit(ch) || ch == '.')
-                digit = digit + ch;
-        }
-        System.out.println(digit);
-        return digit;
-    }
-
     @FindBy(css = ".alert-info.fade.show .alertinner")
-    WebElement basketTotalOnAllProductsPageText;
+    WebElement priceOnPageText;
 
-    public String getBasketTotal2() {
-        String text = basketTotalOnAllProductsPageText.getText();
-        String digit = "";
-        for (int i = 0; i < text.length(); i++) {
-            char ch = text.charAt(i);
-            if (Character.isDigit(ch) || ch == '.')
-                digit = digit + ch;
-        }
-        System.out.println(digit);
-        return digit;
+     public double getBasketTotalOnHeader() {
+        double numb1 = Double.parseDouble(priceOnHeadertext.getText()
+                .replaceAll("[^0-9\\.]", ""));
+        System.out.println(numb1);
+        return numb1;
     }
 
-    public AllProductsPage clickOnCheckoutNowButton() {
-        click(checkoutNowBtn);
-        return this;
+    @FindBy(css = ".col-sm-6.col-md-4.col-lg-3:nth-child(2) .price_color")
+    WebElement bookPrice;
+
+    public double getBookPrice() {
+        double numb2 = Double.parseDouble(bookPrice.getText()
+                .replaceAll("[^0-9\\.]", ""));
+        System.out.println(numb2);
+        return numb2;
+    }
+
+    public double getpriceOnPage() {
+        double numb3 = Double.parseDouble(priceOnPageText.getText()
+                .replaceAll("[^0-9\\.]", ""));
+        System.out.println(numb3);
+        return numb3;
     }
 }
 

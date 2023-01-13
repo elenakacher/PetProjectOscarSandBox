@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="OscarSandbox" verbose="1" >
+
+    <test name="Regression testing" >
+        <classes>
+            <class name="com.telran.oscarLatestVersion.tests.product.AllProductsUITests">
+            </class>
+
+            <class name="com.telran.oscarLatestVersion.tests.product.BookPageTests">
+                <methods>
+                    <include name=".*UI.*"></include>
+                </methods>
+            </class>
+
+            <class name="com.telran.oscarLatestVersion.tests.basket.BasketForLoggedUserTests">
+                <methods>
+                    <include name=".*remove.*"></include>
+                    <include name=".*saveForLater.*"></include>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+</suite>

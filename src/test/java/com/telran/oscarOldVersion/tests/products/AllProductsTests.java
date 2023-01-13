@@ -16,21 +16,19 @@ public class AllProductsTests extends TestBase {
     @BeforeMethod
     public void ensurePrecondition(){
         new HomePage(wd).clickOnLoginButton();
-        new LoginAndRegistrationPage(wd).login(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
+        new LoginAndRegistrationPage(wd).userRegistrationWithoutConcat(LoginPasswordData.USER_LOGIN1, LoginPasswordData.USER_PASSWORD1);
         new HomePage(wd).clickOnAllProductsButton();
     }
 
     @Test
     public void addToBasketTest() {
-        new AllProductsPage(wd).addToBasket();
+        new AllProductsPage(wd).addToBasketOldVersion();
         new HomePage(wd).clickOnViewBasketButton();
-        Assert.assertTrue(new BasketPage(wd).getBookFirstTitel().contains("The shellcoder's handbook"));
-        Assert.assertTrue(new BasketPage(wd).getBookLastTitel().contains("Social Engineering"));
+        Assert.assertTrue(new BasketPage(wd).getBookTitel().contains("The shellcoder's handbook"));
     }
 
     @AfterMethod
     public void tierDown(){
-        new BasketPage(wd).removeBook();
-        new BasketPage(wd).removeBook();
+        new HomePage(wd).clickOnOscarLink().deleteUserOldVersion(LoginPasswordData.USER_PASSWORD1);
     }
 }

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.Date;
+
 public class ProfilePage extends BasePage {
     public ProfilePage(WebDriver wd) {
         super(wd);
@@ -141,5 +143,27 @@ public class ProfilePage extends BasePage {
     public AddressBookPage clickOnAddressBookLink() {
         click(addressBookLink);
         return new AddressBookPage(wd);
+    }
+
+    @FindBy(css = "tr:nth-child(2) td a")
+    WebElement orderNumberHistory;
+
+    @FindBy(css = ".row li:nth-child(2)")
+    WebElement orderHistoryBtn;
+
+    public ProfilePage clickOnOrderHistoryBtn() {
+        click(orderHistoryBtn);
+        return this;
+    }
+
+    public int getOrderNumber() {
+        return Integer.parseInt(orderNumberHistory.getText());
+    }
+
+    @FindBy(css = "tr:nth-child(2) td:nth-child(4)")
+    WebElement date;
+
+    public String getDate() {
+        return date.getText();
     }
 }

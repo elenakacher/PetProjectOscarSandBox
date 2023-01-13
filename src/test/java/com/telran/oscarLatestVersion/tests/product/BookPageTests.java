@@ -98,18 +98,6 @@ public class BookPageTests extends TestBaseLatestVersion {
 
     }
 
-   /* @Test
-    public void addToWishListTest() {
-        new BookPage(wd).addToWishListTest();
-        Assert.assertTrue(new BookPage(wd).confirmMessageText().contains("has been added to your basket."));
-        Assert.assertTrue(new BookPage(wd).isCheckoutNowBtnAppeared());
-    }
-
-    @Test
-    public void beFirstToWriteOneTest() {
-    }*/
-
-
     @AfterMethod(enabled = true)
     public void TierDown() {
         new HomePage(wd).clickOnOscarLink().deleteUser(LoginPasswordData.USER_PASSWORD1);
