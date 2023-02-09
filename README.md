@@ -1,5 +1,5 @@
 ## **Automated test project for an online bookstore** <a href="https://latest.oscarcommerce.com/" target="_blank"> <b> Oscar Sandbox </b></a>
-The graduation paper of the Tel-Ran School testers' group. 
+The graduation paper of the Tel-Ran School testers' group. Practical application what I learned at Tel-Ran school.
 
 <a target="_blank">
   <img src="https://github.com/elenakacher/Project/blob/master/images/OscarSandbox.jpg">
