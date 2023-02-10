@@ -6,7 +6,8 @@
             <class name="com.telran.oscarLatestVersion.tests.user.RegistrationTests">
                 <methods>
                     <exclude name=".*Negative.*"></exclude>
-                    <exclude name=".*WithCsv.*"></exclude>
+                    <exclude name=".*WithCsv
+                    .*"></exclude>
                 </methods>
             </class>
 
