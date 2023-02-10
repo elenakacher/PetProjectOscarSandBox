@@ -89,3 +89,11 @@ or
 ```
 gradlew testngBasket
 ```
+or
+```
+gradlew testngSmoky
+```
+or
+```
+gradlew testngRegression
+```
