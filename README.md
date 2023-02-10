@@ -8,10 +8,11 @@ The graduation paper of the Tel-Ran School testers' group. Practical application
 
 ### **Objective of the project**
 
-- Automating the testing of an online bookstore
-- Identification of bugs 
+- Creating of test documentation (testplan, testsuits, testcases, checklists)
+- Identification and description of bugs (bugreports)
+- Automating the testing of an online bookstore. 
 - Compilation of a set of autotests for smokey testing of the pilot version of the website to regularly and effectively test the performance of the site when extending its functionality
-- Compilation of a set of autotests for regression testing for to regularly and effectively test of the site's performance when fixing bugs and make changes to the programm code. 
+- Compilation of a set of autotests for regression testing to regularly and effectively test of the site's performance when fixing bugs and make changes to the programm code. 
 
 ### **Description**
 
@@ -39,10 +40,21 @@ My colleague and I developed the **Basket** part. You can see the **Test plan** 
 
 </details>
 
+### **Testing was implemented using:**
+| Selenium 3.141 | Java 11 | Gradle | IntelliJ IDEA | Jenkins | Atlassian Jira | TestLink | MindMup
+|--------|:-------|:-------|:-------|:-------|:-------|:-------|:-------| 
+|<p align="center"><a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/selenium.svg" align="center" alt="selenium" width="40" height="40" /> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/java-original-wordmark.svg" alt="java" width="40" height="40"/> </a> </p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/gradle.svg" alt="gradle" width="40" height="40"/> </a> </p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/intellij-idea.svg" alt="IntelliJ" width="40" height="40"/> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jenkins-original.svg" alt="jenkins" width="40" height="40"/> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jira.svg" alt="jira" width="40" height="40"/> </a> </p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/testlink.png" alt="testlink" width="40" height="40"/> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/MindMup.png" alt="mindmup" width="40" height="40"/> </a></p>
+
+
 ## **Manual testing**
+
+Manual testing of the website took approximately 6 hours.
+
 During manual testing of the first version of the website, bugs were found, which I described in detail in the **Jira** software. An example of the description of some bugs can be seen <a href="https://github.com/elenakacher/Project/blob/master/images/bugReports.pdf" target="_blank"> here</a>. I found a total of 10 bugs in the Basket section. 7 of them were fixed in the final version of the site and 2 are marked as features. 
 
 ## **Automated testing**
+
+75 tests were performed for 23 min. 
 
 ### **UI testing**
 UI testing was carried out on the Homepage, Book page and the Products page.
@@ -59,8 +71,9 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 - DataProvider for loading data from files
 - MyListener for generating reports
 - Autotests are run on the Jenkins server
-  
-Testing was implemented using:
-| Selenium | Java | Gradle | IntelliJ IDEA | Jenkins | Atlassian Jira | TestLink | MindMup
-|--------|:-------|:-------|:-------|:-------|:-------|:-------|:-------| 
-|<a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/selenium.svg" alt="selenium" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/java-original-wordmark.svg" alt="java" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/gradle.svg" alt="gradle" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/intellij-idea.svg" alt="IntelliJ" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jenkins-original.svg" alt="jenkins" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jira.svg" alt="jira" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/testlink.png" alt="testlink" width="40" height="40"/> </a> | <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/MindMup.png" alt="mindmup" width="40" height="40"/> </a>
+
+### **How to run**
+
+1. Clone the project on your computer
+2. Run cmd and make sure you are in the project folder
+![Image alt]()
