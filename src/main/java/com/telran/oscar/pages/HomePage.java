@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class HomePage extends BasePage {
     public HomePage(WebDriver wd) {
@@ -26,6 +28,29 @@ public class HomePage extends BasePage {
         Select select = new Select(language);
         select.selectByVisibleText(text);
         click(goBtn);
+        return this;
+    }
+
+    public HomePage selectLanguageWithRobot() {
+        try {
+            Robot robot = new Robot();
+            robot.delay(2000);
+            robot.keyPress(KeyEvent.VK_TAB);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_TAB);
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.delay(1000);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+
         return this;
     }
 

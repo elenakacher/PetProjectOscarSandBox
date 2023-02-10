@@ -188,7 +188,7 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
         Assert.assertTrue(new BasketPage(wd).getPageTitel().contains("Basket"));
     }
 
- /*   @Test
+    @Test
     public void printOrderTest() {
         new BasketPage(wd).clickOnProceedToCheckoutButton();
         new ShippingAddressPage(wd).fillNewAddressForm(AddressData.FIRST_NAME1, AddressData.LAST_NAME1,
@@ -196,7 +196,7 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
                 .selectCountry("Germany").clickOnFirstContinueButton().clickOnSecondContinueButton();
         new OrderPreviewPage(wd).clickOnPlaceOrderButton();
         new OrderConfirmationPage(wd).clickOnPrintBtn().closePrintPage();
-    }*/
+    }
 
     @Test
     public void continueShoppingBtnTest() {

@@ -5,8 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -45,15 +48,14 @@ public class OrderConfirmationPage extends BasePage {
     }
 
     public OrderConfirmationPage closePrintPage() {
-        WebElement currentElement = wd.switchTo().activeElement();
-        currentElement.sendKeys(Keys.ESCAPE);
+        pause(2000);
+        try {
+            Robot robot = new Robot();
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_ESCAPE);
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
         return this;
     }
-
-    /*public OrderConfirmationPage closePrintPage() {
-        pause(3000);
-        Actions actions = new Actions(wd);
-        actions.sendKeys(Keys.ESCAPE).perform();
-        return this;
-    }*/
 }
