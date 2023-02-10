@@ -1,5 +1,5 @@
 ## **Automated test project for an online bookstore** <a href="https://latest.oscarcommerce.com/" target="_blank"> <b> Oscar Sandbox </b></a>
-The graduation paper of the Tel-Ran School testers' group. 
+The graduation paper of the Tel-Ran School testers' group. Practical application what I have learned at school.
 
 <a target="_blank">
   <img src="https://github.com/elenakacher/Project/blob/master/images/OscarSandbox.jpg">
@@ -8,7 +8,10 @@ The graduation paper of the Tel-Ran School testers' group.
 
 ### **Objective of the project**
 
-Automating the testing of an online bookstore. Compilation of a set of autotests for smokey testing of the first version of the website. Identification of bugs and compilation of a set of autotests for regression testing. 
+- Automating the testing of an online bookstore
+- Identification of bugs 
+- Compilation of a set of autotests for smokey testing of the pilot version of the website to regularly and effectively test the performance of the site when extending its functionality
+- Compilation of a set of autotests for regression testing for to regularly and effectively test of the site's performance when fixing bugs and make changes to the programm code. 
 
 ### **Description**
 
