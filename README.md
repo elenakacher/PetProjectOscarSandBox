@@ -77,7 +77,7 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 1. Clone the project on your computer
 2. Run cmd and make sure you are in the project folder
 ![Image alt](https://github.com/elenakacher/Project/blob/master/images/cmd1.jpg)
-3. Write command
+3. Write command to run corresponding set of autotests
 ```
 gradlew testngUser
 ```
