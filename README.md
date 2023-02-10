@@ -97,3 +97,14 @@ or
 ```
 gradlew testngRegression
 ```
+### **How to use this project**
+In the project have been used many generic methods to access and process web page objects. Thay could be used in the another test projects.
+For example:
+clickWithJSExecutor
+typeWithJSExecutor
+pause
+isElementPresent
+checkBrockenImages
+verifyLinks
+takeScreenshotMyListener
+takeScreenshotWithScrollDown
