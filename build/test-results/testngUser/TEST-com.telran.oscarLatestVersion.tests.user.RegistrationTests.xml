@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.oscarLatestVersion.tests.user.RegistrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-13T16:57:01" hostname="DESKTOP-J22V0IL" time="14.447">
+  <properties/>
+  <testcase name="registrationDeletedUserPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="6.99"/>
+  <testcase name="registrationPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="3.198"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 1684
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan. 13, 2023 5:56:58 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 30106
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan. 13, 2023 5:57:10 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+]]></system-err>
+</testsuite>

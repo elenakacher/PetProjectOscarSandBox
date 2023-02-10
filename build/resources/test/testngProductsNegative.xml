@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="OscarSandbox" verbose="1" >
+
+    <test name="Products" >
+        <classes>
+            <class name="com.telran.oscarLatestVersion.tests.product.BookPageTests">
+                <methods>
+                    <include name=".*Negative.*"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

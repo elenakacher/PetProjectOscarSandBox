@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="OscarSandbox" verbose="1" >
+
+    <test name="Basket" >
+        <classes>
+            <class name="com.telran.oscarLatestVersion.tests.basket.BasketForLoggedUserTests">
+            </class>
+
+            <class name="com.telran.oscarLatestVersion.tests.basket.BasketForUnloggedUserTests">
+            </class>
+
+        </classes>
+    </test>
+</suite>
