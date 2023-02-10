@@ -108,3 +108,4 @@ For example:
 - verifyLinks
 - takeScreenshotMyListener
 - takeScreenshotWithScrollDown
+- ...
