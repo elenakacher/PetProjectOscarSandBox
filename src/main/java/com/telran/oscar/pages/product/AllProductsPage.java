@@ -69,16 +69,8 @@ public class AllProductsPage extends BasePage {
     @FindBy(xpath = "//div[@id= 'messages']/div[1]")
     WebElement viewBasketBtn;
 
-    public boolean isViewBasketButtonExists() {
-        return viewBasketBtn.isDisplayed();
-    }
-
     @FindBy(xpath = "//div[@id= 'messages']/div[3]//a[2]")
     WebElement checkoutNowBtn;
-
-    public boolean isCheckoutNowButtonExists() {
-        return checkoutNowBtn.isDisplayed();
-    }
 
     public BookPage clickOnFirstBookTitle() {
         click(firstBookTitel);

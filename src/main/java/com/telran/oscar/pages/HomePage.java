@@ -80,11 +80,6 @@ public class HomePage extends BasePage {
         return this;
     }
 
-    public ProfilePage clickOnAccountButtonOldVersion() {
-        click(accountLink);
-        return new ProfilePage(wd);
-    }
-
     public ProfilePage clickOnAccountButton() {
         click(accountLink);
         return new ProfilePage(wd);
