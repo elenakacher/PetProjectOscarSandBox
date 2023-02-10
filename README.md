@@ -74,6 +74,6 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 
 ### **How to run**
 
-1. : 
-
-2.   
+1. Clone the project on your computer
+2. Run cmd and make sure you are in the project folder
+![Image alt]()
