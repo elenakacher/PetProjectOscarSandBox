@@ -74,9 +74,6 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 
 ### **How to run**
 
-1. Run jenkins with use the cmd: 
-{% filename %}command-line{% endfilename %}
-```
-java -jar jenkins.war
-```
-  
+1. : 
+
+2.   
