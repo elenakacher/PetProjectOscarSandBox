@@ -8,8 +8,9 @@ The graduation paper of the Tel-Ran School testers' group. Practical application
 
 ### **Objective of the project**
 
-- Automating the testing of an online bookstore
+- Creating of test documentation (Testplan, Testsuits, Testcases, Checklists)
 - Identification of bugs 
+- Automating the testing of an online bookstore
 - Compilation of a set of autotests for smokey testing of the pilot version of the website to regularly and effectively test the performance of the site when extending its functionality
 - Compilation of a set of autotests for regression testing for to regularly and effectively test of the site's performance when fixing bugs and make changes to the programm code. 
 
