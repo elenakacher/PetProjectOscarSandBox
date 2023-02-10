@@ -40,6 +40,8 @@ My colleague and I developed the **Basket** part. You can see the **Test plan** 
 
 </details>
 
+
+
 ## **Manual testing**
 
 Manual testing of the website took approximately 6 hours.
