@@ -10,7 +10,7 @@ The graduation paper of the Tel-Ran School testers' group. Practical application
 
 - Creating of test documentation (testplan, testsuits, testcases, checklists)
 - Identification and description of bugs (bugreports)
-- Automating the testing of an online bookstore
+- Automating the testing of an online bookstore. 
 - Compilation of a set of autotests for smokey testing of the pilot version of the website to regularly and effectively test the performance of the site when extending its functionality
 - Compilation of a set of autotests for regression testing to regularly and effectively test of the site's performance when fixing bugs and make changes to the programm code. 
 
@@ -41,9 +41,14 @@ My colleague and I developed the **Basket** part. You can see the **Test plan** 
 </details>
 
 ## **Manual testing**
+
+Manual testing of the website took approximately 6 hours.
+
 During manual testing of the first version of the website, bugs were found, which I described in detail in the **Jira** software. An example of the description of some bugs can be seen <a href="https://github.com/elenakacher/Project/blob/master/images/bugReports.pdf" target="_blank"> here</a>. I found a total of 10 bugs in the Basket section. 7 of them were fixed in the final version of the site and 2 are marked as features. 
 
 ## **Automated testing**
+
+75 tests were performed for 23 min. 
 
 ### **UI testing**
 UI testing was carried out on the Homepage, Book page and the Products page.
