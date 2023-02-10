@@ -71,4 +71,12 @@ UI testing was carried out on the Homepage, Book page and the Products page.
 - DataProvider for loading data from files
 - MyListener for generating reports
 - Autotests are run on the Jenkins server
+
+### **How to run**
+
+1. Run jenkins with use the cmd: 
+{% filename %}command-line{% endfilename %}
+```
+java -jar jenkins.war
+```
   
