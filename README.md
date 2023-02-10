@@ -40,6 +40,12 @@ My colleague and I developed the **Basket** part. You can see the **Test plan** 
 
 </details>
 
+### **Tech stack**
+| Selenium 3.141 | Java 11 | Gradle | IntelliJ IDEA | Jenkins | Atlassian Jira | TestLink | MindMup
+|--------|:-------|:-------|:-------|:-------|:-------|:-------|:-------| 
+|<p align="center"><a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/selenium.svg" align="center" alt="selenium" width="40" height="40" /> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/java-original-wordmark.svg" alt="java" width="40" height="40"/> </a> </p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/gradle.svg" alt="gradle" width="40" height="40"/> </a> </p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/intellij-idea.svg" alt="IntelliJ" width="40" height="40"/> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jenkins-original.svg" alt="jenkins" width="40" height="40"/> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/jira.svg" alt="jira" width="40" height="40"/> </a> </p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/testlink.png" alt="testlink" width="40" height="40"/> </a></p> | <p align="center"> <a target="_blank" rel="noreferrer"> <img src="https://github.com/elenakacher/Project/blob/master/images/MindMup.png" alt="mindmup" width="40" height="40"/> </a></p>
+
+
 ## **Manual testing**
 
 Manual testing of the website took approximately 6 hours.
