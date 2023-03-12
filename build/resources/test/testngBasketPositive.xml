@@ -2,7 +2,7 @@
 
 <suite name="OscarSandbox" verbose="1" >
 
-    <test name="Basket" >
+    <test name="Basket">
         <classes>
             <class name="com.telran.oscarLatestVersion.tests.basket.BasketForLoggedUserTests">
             </class>

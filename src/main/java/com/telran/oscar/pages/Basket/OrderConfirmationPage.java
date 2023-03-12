@@ -42,17 +42,21 @@ public class OrderConfirmationPage extends BasePage {
     @FindBy(css = ".row .col-sm-4:nth-child(1)")
     WebElement printOrderBtn;
 
-    public OrderConfirmationPage clickOnPrintBtn() {
+    public void clickOnPrintBtn() {
         click(printOrderBtn);
-        return this;
+        //return this;
     }
 
     public OrderConfirmationPage closePrintPage() {
         pause(2000);
         try {
             Robot robot = new Robot();
-            robot.delay(1000);
+            //robot.delay(1000);
             robot.keyPress(KeyEvent.VK_ESCAPE);
+            robot.keyRelease(KeyEvent.VK_ESCAPE);
+            pause(2000);
+            robot.keyPress(KeyEvent.VK_ESCAPE);
+            robot.keyRelease(KeyEvent.VK_ESCAPE);
         } catch (AWTException e) {
             e.printStackTrace();
         }

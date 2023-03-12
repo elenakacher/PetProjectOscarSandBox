@@ -1,20 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.oscarLatestVersion.tests.user.RegistrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-13T16:57:01" hostname="DESKTOP-J22V0IL" time="14.447">
+<testsuite name="com.telran.oscarLatestVersion.tests.user.RegistrationTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-10T17:51:32" hostname="DESKTOP-J22V0IL" time="88.461">
   <properties/>
-  <testcase name="registrationDeletedUserPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="6.99"/>
-  <testcase name="registrationPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="3.198"/>
+  <testcase name="registrationDeletedUserPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="7.238"/>
+  <testcase name="registrationPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="2.95"/>
+  <testcase name="registrationPositiveTestWithCsv[0](t@gmail.com, Tommyyyyy)" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="2.974"/>
+  <testcase name="registrationPositiveTestWithCsv[1](t23@gmail.com, tommy12345)" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="2.936"/>
+  <testcase name="registrationPositiveTestWithCsv[2](t.om@gmail.com, 12345!()=)" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="3.004"/>
+  <testcase name="registrationPositiveTestWithCsv[3](tom@gmail.com, TOMMY12345)" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="3.123"/>
+  <testcase name="registrationPositiveTestWithCsv[4](tom@gmail.com, 123498765)" classname="com.telran.oscarLatestVersion.tests.user.RegistrationTests" time="3.119"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 1684
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 34118
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan. 13, 2023 5:56:58 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1676051483.626][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:51:23 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMATION: Detected dialect: W3C
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 30106
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 29425
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan. 13, 2023 5:57:10 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1676051501.489][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:51:41 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 37349
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676051515.040][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:51:55 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 26621
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676051528.614][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:52:08 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 42280
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676051541.931][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:52:21 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 44125
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676051555.482][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:52:35 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 12209
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676051569.108][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:52:49 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMATION: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

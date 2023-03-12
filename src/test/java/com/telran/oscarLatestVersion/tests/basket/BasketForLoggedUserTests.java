@@ -154,6 +154,7 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
         Date currentDate = new Date();
         DateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy");
         String date = dateFormat.format(currentDate);
+        System.out.println(date);
         String strDate = date.replaceAll("[^A-Za-z0-9 ]", "");
         Assert.assertTrue(new ProfilePage(wd).getDate().contains(strDate));
     }
@@ -195,7 +196,9 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
                         AddressData.FIRST_LINE_OF_ADDRESS1, AddressData.CITY1, AddressData.POST_CODE1)
                 .selectCountry("Germany").clickOnFirstContinueButton().clickOnSecondContinueButton();
         new OrderPreviewPage(wd).clickOnPlaceOrderButton();
-        new OrderConfirmationPage(wd).clickOnPrintBtn().closePrintPage();
+        OrderConfirmationPage orderConfirmationPage = new OrderConfirmationPage(wd);
+        orderConfirmationPage.clickOnPrintBtn();
+        orderConfirmationPage.closePrintPage();
     }
 
     @Test

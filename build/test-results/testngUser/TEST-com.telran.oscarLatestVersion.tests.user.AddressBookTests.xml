@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.oscarLatestVersion.tests.user.AddressBookTests" tests="6" skipped="1" failures="1" errors="0" timestamp="2023-01-13T16:58:35" hostname="DESKTOP-J22V0IL" time="70.717">
+<testsuite name="com.telran.oscarLatestVersion.tests.user.AddressBookTests" tests="6" skipped="5" failures="1" errors="0" timestamp="2023-02-10T17:54:45" hostname="DESKTOP-J22V0IL" time="11.018">
   <properties/>
-  <testcase name="addNewAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="3.135"/>
-  <testcase name="cancelAddNewAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="8.694"/>
-  <testcase name="cancelEditAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="11.152"/>
-  <testcase name="deleteAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="3.938"/>
-  <testcase name="ensurePrecondition" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="10.54">
-    <failure message="org.openqa.selenium.NoSuchWindowException: no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.126)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-J22V0IL', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\sps\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e66dd3e142067d00295a09e4ec68aa88" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.126)
+  <testcase name="ensurePrecondition" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="11.009">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.='Register']&quot;}&#10;  (Session info: chrome=110.0.5481.77)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-J22V0IL', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\sps\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6b6eb5580ccef149560f2007c294de61&#10;*** Element info: {Using=xpath, value=//button[.='Register']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.='Register']&quot;}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-J22V0IL', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\sps\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e66dd3e142067d00295a09e4ec68aa88
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.telran.oscar.pages.BasePage.takeScreenshotMyListener(BasePage.java:124)
-	at com.telran.oscar.utils.MyListener.onException(MyListener.java:42)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\sps\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b6eb5580ccef149560f2007c294de61
+*** Element info: {Using=xpath, value=//button[.='Register']}
+	at com.telran.oscar.utils.MyListener.onException(MyListener.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -41,8 +25,8 @@ Session ID: e66dd3e142067d00295a09e4ec68aa88
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy15.click(Unknown Source)
 	at com.telran.oscar.pages.BasePage.click(BasePage.java:26)
-	at com.telran.oscar.pages.HomePage.clickOnAccountButton(HomePage.java:64)
-	at com.telran.oscarLatestVersion.tests.user.AddressBookTests.ensurePrecondition(AddressBookTests.java:22)
+	at com.telran.oscar.pages.user.LoginAndRegistrationPage.userRegistrationWithoutConcat(LoginAndRegistrationPage.java:72)
+	at com.telran.oscarLatestVersion.tests.user.AddressBookTests.ensurePrecondition(AddressBookTests.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,42 +86,28 @@ Session ID: e66dd3e142067d00295a09e4ec68aa88
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
+  <testcase name="addNewAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="cancelAddNewAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="cancelEditAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="deleteAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="0.0">
+    <skipped/>
+  </testcase>
   <testcase name="editAddressPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.AddressBookTests" time="0.0">
     <skipped/>
   </testcase>
-  <system-out><![CDATA[Address Book
-There are no addresses in your address book.
-Add a new address
-]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 14735
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 35673
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan. 13, 2023 5:58:29 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMATION: Detected dialect: W3C
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 3420
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan. 13, 2023 5:58:42 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMATION: Detected dialect: W3C
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 31586
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan. 13, 2023 5:58:59 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMATION: Detected dialect: W3C
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 26430
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan. 13, 2023 5:59:20 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMATION: Detected dialect: W3C
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 22991
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan. 13, 2023 5:59:33 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1676051676.916][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb. 10, 2023 6:54:36 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMATION: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

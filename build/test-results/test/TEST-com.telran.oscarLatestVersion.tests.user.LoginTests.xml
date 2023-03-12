@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.oscarLatestVersion.tests.user.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-10T15:33:55" hostname="DESKTOP-J22V0IL" time="3.637">
+<testsuite name="com.telran.oscarLatestVersion.tests.user.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-12T13:24:40" hostname="DESKTOP-2P46JD9" time="2.818">
   <properties/>
-  <testcase name="loginPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.LoginTests" time="3.637"/>
+  <testcase name="loginPositiveTest" classname="com.telran.oscarLatestVersion.tests.user.LoginTests" time="2.818"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 31043
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 40849
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1676043224.678][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Feb. 10, 2023 4:33:44 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1678627476.430][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678627476.437][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 12, 2023 2:24:36 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMATION: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

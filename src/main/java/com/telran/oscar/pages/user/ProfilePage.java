@@ -164,6 +164,7 @@ public class ProfilePage extends BasePage {
     WebElement date;
 
     public String getDate() {
+        System.out.println(date.getText());
         return date.getText();
     }
 }

@@ -27,8 +27,8 @@ public class TestBaseLatestVersion {
 
         wd.register(new MyListener());
 
-        //new HomePage(wd).selectLanguage("British English");
-        new HomePage(wd).selectLanguageWithRobot();
+        new HomePage(wd).selectLanguage("British English");
+        //new HomePage(wd).selectLanguageWithRobot();
     }
 
     @AfterMethod(enabled = true)
