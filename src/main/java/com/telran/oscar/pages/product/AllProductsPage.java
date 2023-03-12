@@ -236,7 +236,8 @@ public class AllProductsPage extends BasePage {
         return searchField.isDisplayed();
     }
 
-    @FindBy (css = ".btn.btn.btn-secondary.my-2.my-sm-0")
+    //@FindBy (css = ".btn.btn.btn-secondary.my-2.my-sm-0")
+    @FindBy (css = ".btn.btn.btn-secondary.my-2.my-sm")
     WebElement searchBtn;
 
     public boolean isSearchBtnPresent() {
