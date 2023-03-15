@@ -18,8 +18,8 @@
         </encoder>
     </appender>
 
-    <root level="debug">
-<!--        <appender-ref ref="STDOUT"/>&ndash;&gt;-->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>
 </configuration>

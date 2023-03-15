@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" tests="19" skipped="0" failures="0" errors="0" timestamp="2023-03-15T21:36:34" hostname="DESKTOP-2P46JD9" time="53.395">
+  <properties/>
+  <testcase name="SearchBtnTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.051"/>
+  <testcase name="SearchFieldTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.035"/>
+  <testcase name="basketTotalTextTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.059"/>
+  <testcase name="bottomNavigationTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.034"/>
+  <testcase name="breadcrumbTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.035"/>
+  <testcase name="browseStoreTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.03"/>
+  <testcase name="checkBrockenLinksTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="5.174"/>
+  <testcase name="checkMissingImagesTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.398"/>
+  <testcase name="homePageLinkTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.033"/>
+  <testcase name="navbarSupportedContentTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.029"/>
+  <testcase name="pageHeaderTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.03"/>
+  <testcase name="randomBookFirstTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.124"/>
+  <testcase name="randomBookLastTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.133"/>
+  <testcase name="randomBookMittelTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.131"/>
+  <testcase name="showResultsForTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.029"/>
+  <testcase name="sidePanelTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.03"/>
+  <testcase name="statisticMessageTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.029"/>
+  <testcase name="viewBasketBtnTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.027"/>
+  <testcase name="viewBasketDropdownMenuTest" classname="com.telran.oscarLatestVersion.tests.product.AllProductsUITests" time="0.034"/>
+  <system-out><![CDATA[Basket total: £0.00
+View basket
+Toggle Dropdown
+https://latest.oscarcommerce.com/en-gb/catalogue/the-shellcoders-handbook_209/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/hacking-exposed-wireless_208/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/coders-at-work_207/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/visual-guide-to-lock-picking_206/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/studyguide-for-counter-hack-reloaded_205/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/gray-hat-hacking_204/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/the-girl-who-played-with-non-fire_203/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/reversing_202/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/cyberpunk_201/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/applied-cryptography_200/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/the-girl-who-kicked-the-hornets-nest_199/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/hackers-delight_198/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/google-hacking_197/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/silence-on-the-wire_196/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/hacking-work_195/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/the-girl-with-the-dragon-tattoo_194/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/metasploit_193/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/we-are-anonymous_192/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/social-engineering_191/ - OK
+https://latest.oscarcommerce.com/en-gb/catalogue/the-cathedral-the-bazaar_190/ - OK
+We have 20 images
+IMAGE1 DISPLAY - OK
+IMAGE2 DISPLAY - OK
+IMAGE3 DISPLAY - OK
+IMAGE4 DISPLAY - BROKEN
+IMAGE5 DISPLAY - OK
+IMAGE6 DISPLAY - BROKEN
+IMAGE7 DISPLAY - OK
+IMAGE8 DISPLAY - OK
+IMAGE9 DISPLAY - BROKEN
+IMAGE10 DISPLAY - OK
+IMAGE11 DISPLAY - OK
+IMAGE12 DISPLAY - OK
+IMAGE13 DISPLAY - OK
+IMAGE14 DISPLAY - OK
+IMAGE15 DISPLAY - OK
+IMAGE16 DISPLAY - OK
+IMAGE17 DISPLAY - OK
+IMAGE18 DISPLAY - OK
+IMAGE19 DISPLAY - BROKEN
+IMAGE20 DISPLAY - OK
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 6535
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916191.730][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916191.739][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 1266
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916195.204][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916195.209][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 5020
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916197.763][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916197.771][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 18677
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916200.527][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916200.537][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 7448
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916203.092][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916203.097][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 25849
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916205.774][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916205.782][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 47322
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916208.263][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916208.273][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 12056
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916216.019][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916216.028][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 31048
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916218.973][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916218.979][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:36:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 12783
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916221.661][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916221.665][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 10334
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916224.231][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916224.236][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 8253
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916226.734][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916226.740][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 15644
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916229.461][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916229.467][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 36845
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916232.212][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916232.222][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 43466
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916235.713][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916235.724][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 33903
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916238.262][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916238.267][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 16193
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916240.801][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916240.812][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 4389
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916243.369][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916243.378][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 45188
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678916245.965][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1678916245.976][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+März 15, 2023 10:37:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+]]></system-err>
+</testsuite>

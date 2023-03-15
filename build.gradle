@@ -46,6 +46,12 @@ task testngProduct(type:Test) {
     }
 }
 
+task testngUI(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngAllProductsPageAndBookPageUI.xml'
+    }
+}
+
 task testngBasket(type:Test) {
     useTestNG(){
         suites 'src/test/resources/testngBasketPositive.xml'

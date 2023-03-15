@@ -44,7 +44,7 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
         new BasePage(wd).pause(2000);
         double totalAmountForMany = new BasketPage(wd).getTotalAmountForMany();
         double totalAmountForBasket = new BasketPage(wd).getBasketTotal();
-        System.out.println(" " + priceForOne + totalAmountForMany + totalAmountForBasket);
+        System.out.println(" " + priceForOne + " " + totalAmountForMany + " " + totalAmountForBasket);
         Assert.assertEquals(totalAmountForMany, priceForOne*3);
         Assert.assertEquals(totalAmountForMany, totalAmountForBasket);
     }
