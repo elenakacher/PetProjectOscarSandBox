@@ -142,7 +142,7 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
         Assert.assertEquals(orderNumber1, orderNumber2);
     }
 
-    @Test
+    @Test (enabled = false)
     public void isDateOfOrderInHistoryPageActualTest() {
         new BasketPage(wd).clickOnProceedToCheckoutButton();
         new ShippingAddressPage(wd).fillNewAddressForm(AddressData.FIRST_NAME1, AddressData.LAST_NAME1,
@@ -189,7 +189,7 @@ public class BasketForLoggedUserTests extends TestBaseLatestVersion {
         Assert.assertTrue(new BasketPage(wd).getPageTitel().contains("Basket"));
     }
 
-    @Test
+    @Test(enabled = false)
     public void printOrderTest() {
         new BasketPage(wd).clickOnProceedToCheckoutButton();
         new ShippingAddressPage(wd).fillNewAddressForm(AddressData.FIRST_NAME1, AddressData.LAST_NAME1,

@@ -13,6 +13,7 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.testng:testng:7.6.0'
     implementation 'ch.qos.logback:logback-classic:1.2.11'
+    implementation 'io.qameta.allure:allure-junit5:2.21.0'
     implementation 'ru.yandex.qatools.ashot:ashot:1.5.4'
 
 }
@@ -21,9 +22,9 @@ test {
     useTestNG()
 }
 
-task testngSmoky(type:Test) {
+task testngSmoke(type:Test) {
     useTestNG(){
-        suites 'src/test/resources/testngSmoky.xml'
+        suites 'src/test/resources/testngSmoke.xml'
     }
 }
 
